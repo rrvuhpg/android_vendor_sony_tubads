@@ -652,7 +652,6 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary//lib/libvt_avsync.so:system//lib/libvt_avsync.so \
  vendor/sony/tubads/proprietary//lib/libvt_custom.so:system//lib/libvt_custom.so \
  vendor/sony/tubads/proprietary//lib/libvt_socketbind.so:system//lib/libvt_socketbind.so \
- vendor/sony/tubads/proprietary//lib/libwfo_jni.so:system//lib/libwfo_jni.so \
  vendor/sony/tubads/proprietary//lib/lib_asb_tee.so:system//lib/lib_asb_tee.so \
  vendor/sony/tubads/proprietary//lib/sensors.mediatek.so:system//lib/sensors.mediatek.so \
  vendor/sony/tubads/proprietary//lib/sensors.smd.so:system//lib/sensors.smd.so \
@@ -778,7 +777,6 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary//lib64/libvtmal.so:system//lib64/libvtmal.so \
  vendor/sony/tubads/proprietary//lib64/libvt_avsync.so:system//lib64/libvt_avsync.so \
  vendor/sony/tubads/proprietary//lib64/libvt_socketbind.so:system//lib64/libvt_socketbind.so \
- vendor/sony/tubads/proprietary//lib64/libwfo_jni.so:system//lib64/libwfo_jni.so \
  vendor/sony/tubads/proprietary//lib64/lib_asb_tee.so:system//lib64/lib_asb_tee.so \
  vendor/sony/tubads/proprietary//lib64/sensors.mediatek.so:system//lib64/sensors.mediatek.so \
  vendor/sony/tubads/proprietary//lib64/sensors.smd.so:system//lib64/sensors.smd.so \
