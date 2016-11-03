@@ -525,6 +525,43 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/lib/libfusion.so:system/lib/libfusion.so \
  vendor/sony/tubads/proprietary/lib/libmpe.driver.so:system/lib/libmpe.driver.so \
  vendor/sony/tubads/proprietary/lib/libmpe.sensorlistener.so:system/lib/libmpe.sensorlistener.so \
+ vendor/sony/tubads/proprietary/lib/libmrdump.so:system/lib/libmrdump.so \
+ vendor/sony/tubads/proprietary/lib/libmsbc_mtk.so:system/lib/libmsbc_mtk.so \
+ vendor/sony/tubads/proprietary/lib/libmtcloader.so:system/lib/libmtcloader.so \
+ vendor/sony/tubads/proprietary/lib/libmtk_drvb.so:system/lib/libmtk_drvb.so \
+ vendor/sony/tubads/proprietary/lib/libmtk_mmutils.so:system/lib/libmtk_mmutils.so \
+ vendor/sony/tubads/proprietary/lib/libmtkcamera_client.so:system/lib/libmtkcamera_client.so \
+ vendor/sony/tubads/proprietary/lib/libmtkjpeg.so:system/lib/libmtkjpeg.so \
+ vendor/sony/tubads/proprietary/lib/libmtklimiter.so:system/lib/libmtklimiter.so \
+ vendor/sony/tubads/proprietary/lib/libmtkshifter.so:system/lib/libmtkshifter.so \
+ vendor/sony/tubads/proprietary/lib/libn3d3a.so:system/lib/libn3d3a.so \
+ vendor/sony/tubads/proprietary/lib/libnativecheck-jni.so:system/lib/libnativecheck-jni.so \
+ vendor/sony/tubads/proprietary/lib/libnetutils.so:system/lib/libnetutils.so \
+ vendor/sony/tubads/proprietary/lib/libnvram.so:system/lib/libnvram.so \
+ vendor/sony/tubads/proprietary/lib/libnvram_daemon_callback.so:system/lib/libnvram_daemon_callback.so \
+ vendor/sony/tubads/proprietary/lib/libnvram_platform.so:system/lib/libnvram_platform.so \
+ vendor/sony/tubads/proprietary/lib/libnvram_sec.so:system/lib/libnvram_sec.so \
+ vendor/sony/tubads/proprietary/lib/libnvramagentclient.so:system/lib/libnvramagentclient.so \
+ vendor/sony/tubads/proprietary/lib/libperfservice.so:system/lib/libperfservice.so \
+ vendor/sony/tubads/proprietary/lib/libperfservicenative.so:system/lib/libperfservicenative.so \
+ vendor/sony/tubads/proprietary/lib/libpq_cust.so:system/lib/libpq_cust.so \
+ vendor/sony/tubads/proprietary/lib/libpq_prot.so:system/lib/libpq_prot.so \
+ vendor/sony/tubads/proprietary/lib/libpqservice.so:system/lib/libpqservice.so \
+ vendor/sony/tubads/proprietary/lib/libshowlogo.so:system/lib/libshowlogo.so \
+ vendor/sony/tubads/proprietary/lib/libspeech_enh_lib.so:system/lib/libspeech_enh_lib.so \
+ vendor/sony/tubads/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+ vendor/sony/tubads/proprietary/lib/libthermalalgo.so:system/lib/libthermalalgo.so \
+ vendor/sony/tubads/proprietary/lib/libtimestretch.so:system/lib/libtimestretch.so \
+ vendor/sony/tubads/proprietary/lib/libtouchfilter.so:system/lib/libtouchfilter.so \
+ vendor/sony/tubads/proprietary/lib/libudf.so:system/lib/libudf.so \
+ vendor/sony/tubads/proprietary/lib/libui.so:system/lib/libui.so \
+ vendor/sony/tubads/proprietary/lib/libvc1dec_sa.ca7.so:system/lib/libvc1dec_sa.ca7.so \
+ vendor/sony/tubads/proprietary/lib/libvcodec_oal.so:system/lib/libvcodec_oal.so \
+ vendor/sony/tubads/proprietary/lib/libvcodec_utility.so:system/lib/libvcodec_utility.so \
+ vendor/sony/tubads/proprietary/lib/libvcodecdrv.so:system/lib/libvcodecdrv.so \
+ vendor/sony/tubads/proprietary/lib/libvp8dec_sa.ca7.so:system/lib/libvp8dec_sa.ca7.so \
+ vendor/sony/tubads/proprietary/lib/libvp8enc_sa.ca7.so:system/lib/libvp8enc_sa.ca7.so \
+ vendor/sony/tubads/proprietary/lib/libvp9dec_sa.ca7.so:system/lib/libvp9dec_sa.ca7.so \
  vendor/sony/tubads/proprietary/lib/mtk-rilmd2.so:system/lib/mtk-rilmd2.so \
  vendor/sony/tubads/proprietary/lib/mtk-ril.so:system/lib/mtk-ril.so \
  vendor/sony/tubads/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
@@ -538,7 +575,15 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/xbin/mnld:system/xbin/mnld \
  vendor/sony/tubads/proprietary/xbin/MPED:system/xbin/MPED \
  vendor/sony/tubads/proprietary/bin/vold:system/bin/vold \
+ vendor/sony/tubads/proprietary/bin/hostapd:system/bin/hostapd \
+ vendor/sony/tubads/proprietary/bin/hostapd_cli:system/bin/hostapd_cli \
  vendor/sony/tubads/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+ vendor/sony/tubads/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so \
+ vendor/sony/tubads/proprietary/lib/libc.so:system/lib/libc.so \
+ vendor/sony/tubads/proprietary/lib/libcutils.so:system/lib/libcutils.so \
+ vendor/sony/tubads/proprietary/lib64/libc.so:system/lib64/libc.so \
+ vendor/sony/tubads/proprietary/lib64/libcutils.so:system/lib64/libcutils.so \
+ vendor/sony/tubads/proprietary/lib64/libwpa_client.so:system/lib64/libwpa_client.so \
  vendor/sony/tubads/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
  vendor/sony/tubads/proprietary/etc/mddb/DbgInfo_LR11.W1535.MD.MP_CCI6755_64_S10_M_MOLY_LR11_W1535_MD_MP_V41_T1_2016_09_20_00_40_1_ulwctg_n:system/etc/mddb/DbgInfo_LR11.W1535.MD.MP_CCI6755_64_S10_M_MOLY_LR11_W1535_MD_MP_V41_T1_2016_09_20_00_40_1_ulwctg_n \
  vendor/sony/tubads/proprietary/etc/mddb/MDDB.META_MT6755_S00_MOLY_LR11_W1535_MD_MP_V41_T1_1_ulwctg_n.EDB:system/etc/mddb/MDDB.META_MT6755_S00_MOLY_LR11_W1535_MD_MP_V41_T1_1_ulwctg_n.EDB \
