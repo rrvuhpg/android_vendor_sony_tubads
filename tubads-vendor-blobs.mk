@@ -18,8 +18,8 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/bin/6620_launcher:system/bin/6620_launcher \
  vendor/sony/tubads/proprietary/bin/6620_wmt_concurrency:system/bin/6620_wmt_concurrency \
  vendor/sony/tubads/proprietary/bin/6620_wmt_lpbk:system/bin/6620_wmt_lpbk \
- vendor/sony/tubads/proprietary/bin/aal:system/bin/aal \
  vendor/sony/tubads/proprietary/bin/AcdApiDaemon:system/bin/AcdApiDaemon \
+ vendor/sony/tubads/proprietary/bin/MtkCodecService:system/bin/MtkCodecService \
  vendor/sony/tubads/proprietary/bin/aee:system/bin/aee \
  vendor/sony/tubads/proprietary/bin/aee_archive:system/bin/aee_archive \
  vendor/sony/tubads/proprietary/bin/aee_core_forwarder:system/bin/aee_core_forwarder \
@@ -27,9 +27,11 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/bin/akmd8963:system/bin/akmd8963 \
  vendor/sony/tubads/proprietary/bin/akmd8975:system/bin/akmd8975 \
  vendor/sony/tubads/proprietary/bin/ami304d:system/bin/ami304d \
- vendor/sony/tubads/proprietary/bin/atcid:system/bin/atcid \
  vendor/sony/tubads/proprietary/bin/atci_service:system/bin/atci_service \
+ vendor/sony/tubads/proprietary/bin/atcid:system/bin/atcid \
  vendor/sony/tubads/proprietary/bin/audiocmdservice_atci:system/bin/audiocmdservice_atci \
+ vendor/sony/tubads/proprietary/bin/autobt:system/bin/autobt \
+ vendor/sony/tubads/proprietary/bin/autokd:system/bin/autokd \
  vendor/sony/tubads/proprietary/bin/batterywarning:system/bin/batterywarning \
  vendor/sony/tubads/proprietary/bin/bmm050d:system/bin/bmm050d \
  vendor/sony/tubads/proprietary/bin/ccci_fsd:system/bin/ccci_fsd \
@@ -44,8 +46,6 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/bin/gas_srv:system/bin/gas_srv \
  vendor/sony/tubads/proprietary/bin/ged_srv:system/bin/ged_srv \
  vendor/sony/tubads/proprietary/bin/geomagneticd:system/bin/geomagneticd \
- vendor/sony/tubads/proprietary/bin/gsm0710muxd:system/bin/gsm0710muxd \
- vendor/sony/tubads/proprietary/bin/gsm0710muxdmd2:system/bin/gsm0710muxdmd2 \
  vendor/sony/tubads/proprietary/bin/guiext-server:system/bin/guiext-server \
  vendor/sony/tubads/proprietary/bin/kpoc_charger:system/bin/kpoc_charger \
  vendor/sony/tubads/proprietary/bin/lsm303md:system/bin/lsm303md \
@@ -59,9 +59,6 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/bin/mfv_ut:system/bin/mfv_ut \
  vendor/sony/tubads/proprietary/bin/msensord:system/bin/msensord \
  vendor/sony/tubads/proprietary/bin/mtk_agpsd:system/bin/mtk_agpsd \
- vendor/sony/tubads/proprietary/bin/MtkCodecService:system/bin/MtkCodecService \
- vendor/sony/tubads/proprietary/bin/mtkrild:system/bin/mtkrild \
- vendor/sony/tubads/proprietary/bin/mtkrildmd2:system/bin/mtkrildmd2 \
  vendor/sony/tubads/proprietary/bin/muxreport:system/bin/muxreport \
  vendor/sony/tubads/proprietary/bin/netdiag:system/bin/netdiag \
  vendor/sony/tubads/proprietary/bin/nvram_agent_binder:system/bin/nvram_agent_binder \
@@ -77,75 +74,10 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/bin/spm_loader:system/bin/spm_loader \
  vendor/sony/tubads/proprietary/bin/stp_dump3:system/bin/stp_dump3 \
  vendor/sony/tubads/proprietary/bin/terservice:system/bin/terservice \
- vendor/sony/tubads/proprietary/bin/thermal:system/bin/thermal \
- vendor/sony/tubads/proprietary/bin/thermald:system/bin/thermald \
- vendor/sony/tubads/proprietary/bin/thermalloadalgod:system/bin/thermalloadalgod \
- vendor/sony/tubads/proprietary/bin/thermal_manager:system/bin/thermal_manager \
  vendor/sony/tubads/proprietary/bin/vtservice:system/bin/vtservice \
  vendor/sony/tubads/proprietary/bin/wifi2agps:system/bin/wifi2agps \
  vendor/sony/tubads/proprietary/bin/wmt_loader:system/bin/wmt_loader \
  vendor/sony/tubads/proprietary/bin/xlog:system/bin/xlog \
- vendor/sony/tubads/proprietary/etc/audio_param/AudioParamOptions.xml:system/etc/audio_param/AudioParamOptions.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackACF_AudioParam.xml:system/etc/audio_param/PlaybackACF_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackACF_ParamUnitDesc.xml:system/etc/audio_param/PlaybackACF_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Playback_AudioParam.xml:system/etc/audio_param/Playback_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackDRC_AudioParam.xml:system/etc/audio_param/PlaybackDRC_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackDRC_ParamUnitDesc.xml:system/etc/audio_param/PlaybackDRC_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackHCF_AudioParam.xml:system/etc/audio_param/PlaybackHCF_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackHCF_ParamUnitDesc.xml:system/etc/audio_param/PlaybackHCF_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Playback_ParamTreeView.xml:system/etc/audio_param/Playback_ParamTreeView.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Playback_ParamUnitDesc.xml:system/etc/audio_param/Playback_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackVolAna_AudioParam.xml:system/etc/audio_param/PlaybackVolAna_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackVolAna_ParamUnitDesc.xml:system/etc/audio_param/PlaybackVolAna_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackVolDigi_AudioParam.xml:system/etc/audio_param/PlaybackVolDigi_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackVolDigi_ParamUnitDesc.xml:system/etc/audio_param/PlaybackVolDigi_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackVolUI_AudioParam.xml:system/etc/audio_param/PlaybackVolUI_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml:system/etc/audio_param/PlaybackVolUI_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Record_AudioParam.xml:system/etc/audio_param/Record_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordDMNR_AudioParam.xml:system/etc/audio_param/RecordDMNR_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordDMNR_ParamUnitDesc.xml:system/etc/audio_param/RecordDMNR_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordFIR_AudioParam.xml:system/etc/audio_param/RecordFIR_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordFIR_ParamUnitDesc.xml:system/etc/audio_param/RecordFIR_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Record_ParamTreeView.xml:system/etc/audio_param/Record_ParamTreeView.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Record_ParamUnitDesc.xml:system/etc/audio_param/Record_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordUI_AudioParam.xml:system/etc/audio_param/RecordUI_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordUI_ParamUnitDesc.xml:system/etc/audio_param/RecordUI_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordVol_AudioParam.xml:system/etc/audio_param/RecordVol_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordVol_ParamUnitDesc.xml:system/etc/audio_param/RecordVol_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordVolUI_AudioParam.xml:system/etc/audio_param/RecordVolUI_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/RecordVolUI_ParamUnitDesc.xml:system/etc/audio_param/RecordVolUI_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Speech_AudioParam.xml:system/etc/audio_param/Speech_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechDMNR_AudioParam.xml:system/etc/audio_param/SpeechDMNR_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechDMNR_ParamUnitDesc.xml:system/etc/audio_param/SpeechDMNR_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechGeneral_AudioParam.xml:system/etc/audio_param/SpeechGeneral_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechGeneral_ParamUnitDesc.xml:system/etc/audio_param/SpeechGeneral_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechMagiClarity_AudioParam.xml:system/etc/audio_param/SpeechMagiClarity_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechMagiClarity_ParamUnitDesc.xml:system/etc/audio_param/SpeechMagiClarity_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Speech_ParamTreeView.xml:system/etc/audio_param/Speech_ParamTreeView.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Speech_ParamUnitDesc.xml:system/etc/audio_param/Speech_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechUI_AudioParam.xml:system/etc/audio_param/SpeechUI_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechUI_ParamUnitDesc.xml:system/etc/audio_param/SpeechUI_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechVol_AudioParam.xml:system/etc/audio_param/SpeechVol_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechVol_ParamUnitDesc.xml:system/etc/audio_param/SpeechVol_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechVolUI_AudioParam.xml:system/etc/audio_param/SpeechVolUI_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml:system/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIP_AudioParam.xml:system/etc/audio_param/VoIP_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPDMNR_AudioParam.xml:system/etc/audio_param/VoIPDMNR_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPDMNR_ParamUnitDesc.xml:system/etc/audio_param/VoIPDMNR_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPGeneral_AudioParam.xml:system/etc/audio_param/VoIPGeneral_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPGeneral_ParamUnitDesc.xml:system/etc/audio_param/VoIPGeneral_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIP_ParamTreeView.xml:system/etc/audio_param/VoIP_ParamTreeView.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIP_ParamUnitDesc.xml:system/etc/audio_param/VoIP_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPUI_AudioParam.xml:system/etc/audio_param/VoIPUI_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPUI_ParamUnitDesc.xml:system/etc/audio_param/VoIPUI_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPVol_AudioParam.xml:system/etc/audio_param/VoIPVol_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPVol_ParamUnitDesc.xml:system/etc/audio_param/VoIPVol_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPVolUI_AudioParam.xml:system/etc/audio_param/VoIPVolUI_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VoIPVolUI_ParamUnitDesc.xml:system/etc/audio_param/VoIPVolUI_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Volume_AudioParam.xml:system/etc/audio_param/Volume_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VolumeGainMap_AudioParam.xml:system/etc/audio_param/VolumeGainMap_AudioParam.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:system/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
- vendor/sony/tubads/proprietary/etc/audio_param/Volume_ParamUnitDesc.xml:system/etc/audio_param/Volume_ParamUnitDesc.xml \
  vendor/sony/tubads/proprietary/etc/custom.conf:system/etc/custom.conf \
  vendor/sony/tubads/proprietary/etc/firmware/catcher_filter_1_ulwctg_n.bin:system/etc/firmware/catcher_filter_1_ulwctg_n.bin \
  vendor/sony/tubads/proprietary/etc/firmware/mt6627/mt6627_fm_v1_coeff.bin:system/etc/firmware/mt6627/mt6627_fm_v1_coeff.bin \
@@ -169,177 +101,10 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/etc/firmware/ROMv2_lm_patch_1_1_hdr.bin:system/etc/firmware/ROMv2_lm_patch_1_1_hdr.bin \
  vendor/sony/tubads/proprietary/etc/firmware/WIFI_RAM_CODE_6755:system/etc/firmware/WIFI_RAM_CODE_6755 \
  vendor/sony/tubads/proprietary/etc/firmware/WMT_SOC.cfg:system/etc/firmware/WMT_SOC.cfg \
- vendor/sony/tubads/proprietary/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg \
  vendor/sony/tubads/proprietary/etc/mtklog-config.prop:system/etc/mtklog-config.prop \
- vendor/sony/tubads/proprietary/etc/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
  vendor/sony/tubads/proprietary/etc/radvd/radvd.conf:system/etc/radvd/radvd.conf \
- vendor/sony/tubads/proprietary/etc/.tp/.ht120.mtc:system/etc/.tp/.ht120.mtc \
- vendor/sony/tubads/proprietary/etc/.tp/thermal.conf:system/etc/.tp/thermal.conf \
- vendor/sony/tubads/proprietary/etc/.tp/.thermal_meta.conf:system/etc/.tp/.thermal_meta.conf \
- vendor/sony/tubads/proprietary/etc/.tp/thermal.off.conf:system/etc/.tp/thermal.off.conf \
- vendor/sony/tubads/proprietary/etc/.tp/.thermal_policy_00:system/etc/.tp/.thermal_policy_00 \
- vendor/sony/tubads/proprietary/etc/.tp/.thermal_policy_01:system/etc/.tp/.thermal_policy_01 \
- vendor/sony/tubads/proprietary/etc/.tp/.thermal_policy_02:system/etc/.tp/.thermal_policy_02 \
  vendor/sony/tubads/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
- vendor/sony/tubads/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
  vendor/sony/tubads/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
- vendor/sony/tubads/proprietary/lib64/egl/libGLES_mali.so:system/lib64/egl/libGLES_mali.so \
- vendor/sony/tubads/proprietary/lib64/hw/audio.primary.mt6755.so:system/lib64/hw/audio.primary.mt6755.so \
- vendor/sony/tubads/proprietary/lib64/hw/camera.mt6755.so:system/lib64/hw/camera.mt6755.so \
- vendor/sony/tubads/proprietary/lib64/hw/gps.mt6755.so:system/lib64/hw/gps.mt6755.so \
- vendor/sony/tubads/proprietary/lib64/hw/gralloc.mt6755.so:system/lib64/hw/gralloc.mt6755.so \
- vendor/sony/tubads/proprietary/lib64/hw/hwcomposer.mt6755.so:system/lib64/hw/hwcomposer.mt6755.so \
- vendor/sony/tubads/proprietary/lib64/hw/lights.mt6755.so:system/lib64/hw/lights.mt6755.so \
- vendor/sony/tubads/proprietary/lib64/hw/memtrack.mt6755.so:system/lib64/hw/memtrack.mt6755.so \
- vendor/sony/tubads/proprietary/lib64/hw/mmsdk.mt6755.so:system/lib64/hw/mmsdk.mt6755.so \
- vendor/sony/tubads/proprietary/lib64/hw/sensors.mt6755.so:system/lib64/hw/sensors.mt6755.so \
- vendor/sony/tubads/proprietary/lib64/lib3a_sample.so:system/lib64/lib3a_sample.so \
- vendor/sony/tubads/proprietary/lib64/lib3a.so:system/lib64/lib3a.so \
- vendor/sony/tubads/proprietary/lib64/liba3m.so:system/lib64/liba3m.so \
- vendor/sony/tubads/proprietary/lib64/libaal.so:system/lib64/libaal.so \
- vendor/sony/tubads/proprietary/lib64/libacdk.so:system/lib64/libacdk.so \
- vendor/sony/tubads/proprietary/lib64/libaed.so:system/lib64/libaed.so \
- vendor/sony/tubads/proprietary/lib64/libatvctrlservice.so:system/lib64/libatvctrlservice.so \
- vendor/sony/tubads/proprietary/lib64/libaudiocompensationfilter.so:system/lib64/libaudiocompensationfilter.so \
- vendor/sony/tubads/proprietary/lib64/libaudiocomponentengine.so:system/lib64/libaudiocomponentengine.so \
- vendor/sony/tubads/proprietary/lib64/libaudiocustparam.so:system/lib64/libaudiocustparam.so \
- vendor/sony/tubads/proprietary/lib64/libaudiodcrflt.so:system/lib64/libaudiodcrflt.so \
- vendor/sony/tubads/proprietary/lib64/libaudio_param_parser.so:system/lib64/libaudio_param_parser.so \
- vendor/sony/tubads/proprietary/lib64/libaudiosetting.so:system/lib64/libaudiosetting.so \
- vendor/sony/tubads/proprietary/lib64/libbessound_hd_mtk.so:system/lib64/libbessound_hd_mtk.so \
- vendor/sony/tubads/proprietary/lib64/libblisrc32.so:system/lib64/libblisrc32.so \
- vendor/sony/tubads/proprietary/lib64/libblisrc.so:system/lib64/libblisrc.so \
- vendor/sony/tubads/proprietary/lib64/libbluetoothem_mtk.so:system/lib64/libbluetoothem_mtk.so \
- vendor/sony/tubads/proprietary/lib64/libbluetooth_mtk_pure.so:system/lib64/libbluetooth_mtk_pure.so \
- vendor/sony/tubads/proprietary/lib64/libbluetooth_mtk.so:system/lib64/libbluetooth_mtk.so \
- vendor/sony/tubads/proprietary/lib64/libbluetooth_relayer.so:system/lib64/libbluetooth_relayer.so \
- vendor/sony/tubads/proprietary/lib64/libBnMtkCodec.so:system/lib64/libBnMtkCodec.so \
- vendor/sony/tubads/proprietary/lib64/libbwc.so:system/lib64/libbwc.so \
- vendor/sony/tubads/proprietary/lib64/libcam1_utils.so:system/lib64/libcam1_utils.so \
- vendor/sony/tubads/proprietary/lib64/libcam3_app.so:system/lib64/libcam3_app.so \
- vendor/sony/tubads/proprietary/lib64/libcam3_hwnode.so:system/lib64/libcam3_hwnode.so \
- vendor/sony/tubads/proprietary/lib64/libcam3_hwpipeline.so:system/lib64/libcam3_hwpipeline.so \
- vendor/sony/tubads/proprietary/lib64/libcam3_pipeline.so:system/lib64/libcam3_pipeline.so \
- vendor/sony/tubads/proprietary/lib64/libcam3_utils.so:system/lib64/libcam3_utils.so \
- vendor/sony/tubads/proprietary/lib64/libcamalgo.so:system/lib64/libcamalgo.so \
- vendor/sony/tubads/proprietary/lib64/libcam.camadapter.so:system/lib64/libcam.camadapter.so \
- vendor/sony/tubads/proprietary/lib64/libcam.camnode.so:system/lib64/libcam.camnode.so \
- vendor/sony/tubads/proprietary/lib64/libcam.camshot.so:system/lib64/libcam.camshot.so \
- vendor/sony/tubads/proprietary/lib64/libcam.client.so:system/lib64/libcam.client.so \
- vendor/sony/tubads/proprietary/lib64/libcam.device1.so:system/lib64/libcam.device1.so \
- vendor/sony/tubads/proprietary/lib64/libcam.device3.so:system/lib64/libcam.device3.so \
- vendor/sony/tubads/proprietary/lib64/libcamdrv.so:system/lib64/libcamdrv.so \
- vendor/sony/tubads/proprietary/lib64/libcameracustom.so:system/lib64/libcameracustom.so \
- vendor/sony/tubads/proprietary/lib64/libcam.exif.so:system/lib64/libcam.exif.so \
- vendor/sony/tubads/proprietary/lib64/libcam.exif.v3.so:system/lib64/libcam.exif.v3.so \
- vendor/sony/tubads/proprietary/lib64/libcam.hal3a.v3.dng.so:system/lib64/libcam.hal3a.v3.dng.so \
- vendor/sony/tubads/proprietary/lib64/libcam.hal3a.v3.so:system/lib64/libcam.hal3a.v3.so \
- vendor/sony/tubads/proprietary/lib64/libcam.halsensor.so:system/lib64/libcam.halsensor.so \
- vendor/sony/tubads/proprietary/lib64/libcam_hwutils.so:system/lib64/libcam_hwutils.so \
- vendor/sony/tubads/proprietary/lib64/libcam.iopipe.so:system/lib64/libcam.iopipe.so \
- vendor/sony/tubads/proprietary/lib64/libcam.metadataprovider.so:system/lib64/libcam.metadataprovider.so \
- vendor/sony/tubads/proprietary/lib64/libcam.metadata.so:system/lib64/libcam.metadata.so \
- vendor/sony/tubads/proprietary/lib64/libcam_mmp.so:system/lib64/libcam_mmp.so \
- vendor/sony/tubads/proprietary/lib64/libcam.paramsmgr.so:system/lib64/libcam.paramsmgr.so \
- vendor/sony/tubads/proprietary/lib64/libcam_platform.so:system/lib64/libcam_platform.so \
- vendor/sony/tubads/proprietary/lib64/libcam.sdkclient.so:system/lib64/libcam.sdkclient.so \
- vendor/sony/tubads/proprietary/lib64/libcam.utils.cpuctrl.so:system/lib64/libcam.utils.cpuctrl.so \
- vendor/sony/tubads/proprietary/lib64/libcam.utils.sensorlistener.so:system/lib64/libcam.utils.sensorlistener.so \
- vendor/sony/tubads/proprietary/lib64/libcam_utils.so:system/lib64/libcam_utils.so \
- vendor/sony/tubads/proprietary/lib64/libcam.utils.so:system/lib64/libcam.utils.so \
- vendor/sony/tubads/proprietary/lib64/libccci_util.so:system/lib64/libccci_util.so \
- vendor/sony/tubads/proprietary/lib64/libcurl.so:system/lib64/libcurl.so \
- vendor/sony/tubads/proprietary/lib64/libcustom_jni.so:system/lib64/libcustom_jni.so \
- vendor/sony/tubads/proprietary/lib64/libcustom_nvram.so:system/lib64/libcustom_nvram.so \
- vendor/sony/tubads/proprietary/lib64/libcustom_prop.so:system/lib64/libcustom_prop.so \
- vendor/sony/tubads/proprietary/lib64/libcvsd_mtk.so:system/lib64/libcvsd_mtk.so \
- vendor/sony/tubads/proprietary/lib64/libdirect-coredump.so:system/lib64/libdirect-coredump.so \
- vendor/sony/tubads/proprietary/lib64/libdngop.so:system/lib64/libdngop.so \
- vendor/sony/tubads/proprietary/lib64/libdpframework.so:system/lib64/libdpframework.so \
- vendor/sony/tubads/proprietary/lib64/libdrmmtkutil.so:system/lib64/libdrmmtkutil.so \
- vendor/sony/tubads/proprietary/lib64/libdrmmtkwhitelist.so:system/lib64/libdrmmtkwhitelist.so \
- vendor/sony/tubads/proprietary/lib64/libeffect.facebeautypp.so:system/lib64/libeffect.facebeautypp.so \
- vendor/sony/tubads/proprietary/lib64/libeffecthal.JPG.so:system/lib64/libeffecthal.JPG.so \
- vendor/sony/tubads/proprietary/lib64/libem_bt_jni.so:system/lib64/libem_bt_jni.so \
- vendor/sony/tubads/proprietary/lib64/libem_gpio_jni.so:system/lib64/libem_gpio_jni.so \
- vendor/sony/tubads/proprietary/lib64/libem_lte_jni.so:system/lib64/libem_lte_jni.so \
- vendor/sony/tubads/proprietary/lib64/libem_modem_jni.so:system/lib64/libem_modem_jni.so \
- vendor/sony/tubads/proprietary/lib64/libem_sensor_jni.so:system/lib64/libem_sensor_jni.so \
- vendor/sony/tubads/proprietary/lib64/libem_support_jni.so:system/lib64/libem_support_jni.so \
- vendor/sony/tubads/proprietary/lib64/libem_usb_jni.so:system/lib64/libem_usb_jni.so \
- vendor/sony/tubads/proprietary/lib64/libem_wifi_jni.so:system/lib64/libem_wifi_jni.so \
- vendor/sony/tubads/proprietary/lib64/libfeatureiodrv.so:system/lib64/libfeatureiodrv.so \
- vendor/sony/tubads/proprietary/lib64/libfeatureio.so:system/lib64/libfeatureio.so \
- vendor/sony/tubads/proprietary/lib64/libfile_op.so:system/lib64/libfile_op.so \
- vendor/sony/tubads/proprietary/lib64/libfmcust.so:system/lib64/libfmcust.so \
- vendor/sony/tubads/proprietary/lib64/libgas.so:system/lib64/libgas.so \
- vendor/sony/tubads/proprietary/lib64/libged.so:system/lib64/libged.so \
- vendor/sony/tubads/proprietary/lib64/libgpu_aux.so:system/lib64/libgpu_aux.so \
- vendor/sony/tubads/proprietary/lib64/libgralloc_extra.so:system/lib64/libgralloc_extra.so \
- vendor/sony/tubads/proprietary/lib64/libhdrproc.so:system/lib64/libhdrproc.so \
- vendor/sony/tubads/proprietary/lib64/libhwm.so:system/lib64/libhwm.so \
- vendor/sony/tubads/proprietary/lib64/libimageio_plat_drv.so:system/lib64/libimageio_plat_drv.so \
- vendor/sony/tubads/proprietary/lib64/libimageio.so:system/lib64/libimageio.so \
- vendor/sony/tubads/proprietary/lib64/libion_mtk.so:system/lib64/libion_mtk.so \
- vendor/sony/tubads/proprietary/lib64/libion.so:system/lib64/libion.so \
- vendor/sony/tubads/proprietary/lib64/libja3m.so:system/lib64/libja3m.so \
- vendor/sony/tubads/proprietary/lib64/libjni_pq.so:system/lib64/libjni_pq.so \
- vendor/sony/tubads/proprietary/lib64/libJpgDecPipe.so:system/lib64/libJpgDecPipe.so \
- vendor/sony/tubads/proprietary/lib64/libJpgEncPipe.so:system/lib64/libJpgEncPipe.so \
- vendor/sony/tubads/proprietary/lib64/libm4u.so:system/lib64/libm4u.so \
- vendor/sony/tubads/proprietary/lib64/libmal.so:system/lib64/libmal.so \
- vendor/sony/tubads/proprietary/lib64/libmatv_cust.so:system/lib64/libmatv_cust.so \
- vendor/sony/tubads/proprietary/lib64/libmdfx.so:system/lib64/libmdfx.so \
- vendor/sony/tubads/proprietary/lib64/libmdloggerrecycle.so:system/lib64/libmdloggerrecycle.so \
- vendor/sony/tubads/proprietary/lib64/libmediatek_exceptionlog.so:system/lib64/libmediatek_exceptionlog.so \
- vendor/sony/tubads/proprietary/lib64/libmemoryDumpEncoder.so:system/lib64/libmemoryDumpEncoder.so \
- vendor/sony/tubads/proprietary/lib64/libmemorydumper.so:system/lib64/libmemorydumper.so \
- vendor/sony/tubads/proprietary/lib64/libmhalImageCodec.so:system/lib64/libmhalImageCodec.so \
- vendor/sony/tubads/proprietary/lib64/libMiraVision_jni.so:system/lib64/libMiraVision_jni.so \
- vendor/sony/tubads/proprietary/lib64/libmmprofile_jni.so:system/lib64/libmmprofile_jni.so \
- vendor/sony/tubads/proprietary/lib64/libmmprofile.so:system/lib64/libmmprofile.so \
- vendor/sony/tubads/proprietary/lib64/libmmsdkservice.so:system/lib64/libmmsdkservice.so \
- vendor/sony/tubads/proprietary/lib64/libmrdump.so:system/lib64/libmrdump.so \
- vendor/sony/tubads/proprietary/lib64/libmsbc_mtk.so:system/lib64/libmsbc_mtk.so \
- vendor/sony/tubads/proprietary/lib64/libmtkcamera_client.so:system/lib64/libmtkcamera_client.so \
- vendor/sony/tubads/proprietary/lib64/libmtk_drvb.so:system/lib64/libmtk_drvb.so \
- vendor/sony/tubads/proprietary/lib64/libmtkjpeg.so:system/lib64/libmtkjpeg.so \
- vendor/sony/tubads/proprietary/lib64/libmtklimiter.so:system/lib64/libmtklimiter.so \
- vendor/sony/tubads/proprietary/lib64/libmtk_mmutils.so:system/lib64/libmtk_mmutils.so \
- vendor/sony/tubads/proprietary/lib64/libMtkOmxCore.so:system/lib64/libMtkOmxCore.so \
- vendor/sony/tubads/proprietary/lib64/libmtkplayer.so:system/lib64/libmtkplayer.so \
- vendor/sony/tubads/proprietary/lib64/libmtkshifter.so:system/lib64/libmtkshifter.so \
- vendor/sony/tubads/proprietary/lib64/libMtkVideoTranscoder.so:system/lib64/libMtkVideoTranscoder.so \
- vendor/sony/tubads/proprietary/lib64/libn3d3a.so:system/lib64/libn3d3a.so \
- vendor/sony/tubads/proprietary/lib64/libnativecheck-jni.so:system/lib64/libnativecheck-jni.so \
- vendor/sony/tubads/proprietary/lib64/libnetutils.so:system/lib64/libnetutils.so \
- vendor/sony/tubads/proprietary/lib64/libnvramagentclient.so:system/lib64/libnvramagentclient.so \
- vendor/sony/tubads/proprietary/lib64/libnvram_daemon_callback.so:system/lib64/libnvram_daemon_callback.so \
- vendor/sony/tubads/proprietary/lib64/libnvram_platform.so:system/lib64/libnvram_platform.so \
- vendor/sony/tubads/proprietary/lib64/libnvram_sec.so:system/lib64/libnvram_sec.so \
- vendor/sony/tubads/proprietary/lib64/libnvram.so:system/lib64/libnvram.so \
- vendor/sony/tubads/proprietary/lib64/libperfservicenative.so:system/lib64/libperfservicenative.so \
- vendor/sony/tubads/proprietary/lib64/libperfservice.so:system/lib64/libperfservice.so \
- vendor/sony/tubads/proprietary/lib64/libpq_cust.so:system/lib64/libpq_cust.so \
- vendor/sony/tubads/proprietary/lib64/libPQDCjni.so:system/lib64/libPQDCjni.so \
- vendor/sony/tubads/proprietary/lib64/libPQjni.so:system/lib64/libPQjni.so \
- vendor/sony/tubads/proprietary/lib64/libpq_prot.so:system/lib64/libpq_prot.so \
- vendor/sony/tubads/proprietary/lib64/libpqservice.so:system/lib64/libpqservice.so \
- vendor/sony/tubads/proprietary/lib64/librilmtkmd2.so:system/lib64/librilmtkmd2.so \
- vendor/sony/tubads/proprietary/lib64/librilmtk.so:system/lib64/librilmtk.so \
- vendor/sony/tubads/proprietary/lib64/libSonyIMX230PdafLibrary.so:system/lib64/libSonyIMX230PdafLibrary.so \
- vendor/sony/tubads/proprietary/lib64/libspeech_enh_lib.so:system/lib64/libspeech_enh_lib.so \
- vendor/sony/tubads/proprietary/lib64/libstagefrighthw.so:system/lib64/libstagefrighthw.so \
- vendor/sony/tubads/proprietary/lib64/libSwJpgCodec.so:system/lib64/libSwJpgCodec.so \
- vendor/sony/tubads/proprietary/lib64/libterservice.so:system/lib64/libterservice.so \
- vendor/sony/tubads/proprietary/lib64/libtouchfilter.so:system/lib64/libtouchfilter.so \
- vendor/sony/tubads/proprietary/lib64/libudf.so:system/lib64/libudf.so \
- vendor/sony/tubads/proprietary/lib64/libui.so:system/lib64/libui.so \
- vendor/sony/tubads/proprietary/lib64/libvcodecdrv.so:system/lib64/libvcodecdrv.so \
- vendor/sony/tubads/proprietary/lib64/libvcodec_utility.so:system/lib64/libvcodec_utility.so \
- vendor/sony/tubads/proprietary/lib64/libwifitest.so:system/lib64/libwifitest.so \
- vendor/sony/tubads/proprietary/lib64/mtk-rilmd2.so:system/lib64/mtk-rilmd2.so \
- vendor/sony/tubads/proprietary/lib64/mtk-ril.so:system/lib64/mtk-ril.so \
  vendor/sony/tubads/proprietary/lib/egl/libGLES_mali.so:system/lib/egl/libGLES_mali.so \
  vendor/sony/tubads/proprietary/lib/hw/audio.primary.mt6755.so:system/lib/hw/audio.primary.mt6755.so \
  vendor/sony/tubads/proprietary/lib/hw/camera.mt6755.so:system/lib/hw/camera.mt6755.so \
@@ -350,65 +115,84 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/lib/hw/memtrack.mt6755.so:system/lib/hw/memtrack.mt6755.so \
  vendor/sony/tubads/proprietary/lib/hw/mmsdk.mt6755.so:system/lib/hw/mmsdk.mt6755.so \
  vendor/sony/tubads/proprietary/lib/hw/sensors.mt6755.so:system/lib/hw/sensors.mt6755.so \
- vendor/sony/tubads/proprietary/lib/lib3a_sample.so:system/lib/lib3a_sample.so \
  vendor/sony/tubads/proprietary/lib/lib3a.so:system/lib/lib3a.so \
+ vendor/sony/tubads/proprietary/lib/lib3a_sample.so:system/lib/lib3a_sample.so \
+ vendor/sony/tubads/proprietary/lib/libBnMtkCodec.so:system/lib/libBnMtkCodec.so \
+ vendor/sony/tubads/proprietary/lib/libDR.so:system/lib/libDR.so \
+ vendor/sony/tubads/proprietary/lib/libJniAtvService.so:system/lib/libJniAtvService.so \
+ vendor/sony/tubads/proprietary/lib/libJpgDecPipe.so:system/lib/libJpgDecPipe.so \
+ vendor/sony/tubads/proprietary/lib/libJpgEncPipe.so:system/lib/libJpgEncPipe.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxAdpcmDec.so:system/lib/libMtkOmxAdpcmDec.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxAdpcmEnc.so:system/lib/libMtkOmxAdpcmEnc.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxApeDec.so:system/lib/libMtkOmxApeDec.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxCore.so:system/lib/libMtkOmxCore.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxFlacDec.so:system/lib/libMtkOmxFlacDec.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxG711Dec.so:system/lib/libMtkOmxG711Dec.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxGsmDec.so:system/lib/libMtkOmxGsmDec.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxMp3Dec.so:system/lib/libMtkOmxMp3Dec.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxRawDec.so:system/lib/libMtkOmxRawDec.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxVdecEx.so:system/lib/libMtkOmxVdecEx.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxVenc.so:system/lib/libMtkOmxVenc.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxVorbisEnc.so:system/lib/libMtkOmxVorbisEnc.so \
+ vendor/sony/tubads/proprietary/lib/libMtkVideoTranscoder.so:system/lib/libMtkVideoTranscoder.so \
+ vendor/sony/tubads/proprietary/lib/libPQDCjni.so:system/lib/libPQDCjni.so \
+ vendor/sony/tubads/proprietary/lib/libPQjni.so:system/lib/libPQjni.so \
+ vendor/sony/tubads/proprietary/lib/libSonyIMX230PdafLibrary.so:system/lib/libSonyIMX230PdafLibrary.so \
+ vendor/sony/tubads/proprietary/lib/libSwJpgCodec.so:system/lib/libSwJpgCodec.so \
  vendor/sony/tubads/proprietary/lib/liba3m.so:system/lib/liba3m.so \
- vendor/sony/tubads/proprietary/lib/libaal.so:system/lib/libaal.so \
  vendor/sony/tubads/proprietary/lib/libacdk.so:system/lib/libacdk.so \
  vendor/sony/tubads/proprietary/lib/libaed.so:system/lib/libaed.so \
  vendor/sony/tubads/proprietary/lib/libatvctrlservice.so:system/lib/libatvctrlservice.so \
+ vendor/sony/tubads/proprietary/lib/libaudio_param_parser.so:system/lib/libaudio_param_parser.so \
  vendor/sony/tubads/proprietary/lib/libaudiocompensationfilter.so:system/lib/libaudiocompensationfilter.so \
  vendor/sony/tubads/proprietary/lib/libaudiocomponentengine.so:system/lib/libaudiocomponentengine.so \
  vendor/sony/tubads/proprietary/lib/libaudiocustparam.so:system/lib/libaudiocustparam.so \
  vendor/sony/tubads/proprietary/lib/libaudiodcrflt.so:system/lib/libaudiodcrflt.so \
  vendor/sony/tubads/proprietary/lib/libaudiomtkdcremoval.so:system/lib/libaudiomtkdcremoval.so \
- vendor/sony/tubads/proprietary/lib/libaudio_param_parser.so:system/lib/libaudio_param_parser.so \
  vendor/sony/tubads/proprietary/lib/libaudiosetting.so:system/lib/libaudiosetting.so \
  vendor/sony/tubads/proprietary/lib/libbessound_hd_mtk.so:system/lib/libbessound_hd_mtk.so \
  vendor/sony/tubads/proprietary/lib/libbessurround_mtk.so:system/lib/libbessurround_mtk.so \
- vendor/sony/tubads/proprietary/lib/libblisrc32.so:system/lib/libblisrc32.so \
  vendor/sony/tubads/proprietary/lib/libblisrc.so:system/lib/libblisrc.so \
- vendor/sony/tubads/proprietary/lib/libbluetoothem_mtk.so:system/lib/libbluetoothem_mtk.so \
- vendor/sony/tubads/proprietary/lib/libbluetooth_mtk_pure.so:system/lib/libbluetooth_mtk_pure.so \
+ vendor/sony/tubads/proprietary/lib/libblisrc32.so:system/lib/libblisrc32.so \
  vendor/sony/tubads/proprietary/lib/libbluetooth_mtk.so:system/lib/libbluetooth_mtk.so \
+ vendor/sony/tubads/proprietary/lib/libbluetooth_mtk_pure.so:system/lib/libbluetooth_mtk_pure.so \
  vendor/sony/tubads/proprietary/lib/libbluetooth_relayer.so:system/lib/libbluetooth_relayer.so \
- vendor/sony/tubads/proprietary/lib/libBnMtkCodec.so:system/lib/libBnMtkCodec.so \
+ vendor/sony/tubads/proprietary/lib/libbluetoothem_mtk.so:system/lib/libbluetoothem_mtk.so \
  vendor/sony/tubads/proprietary/lib/libbt-vendor.so:system/lib/libbt-vendor.so \
  vendor/sony/tubads/proprietary/lib/libbwc.so:system/lib/libbwc.so \
- vendor/sony/tubads/proprietary/lib/libcam1_utils.so:system/lib/libcam1_utils.so \
- vendor/sony/tubads/proprietary/lib/libcam3_app.so:system/lib/libcam3_app.so \
- vendor/sony/tubads/proprietary/lib/libcam3_hwnode.so:system/lib/libcam3_hwnode.so \
- vendor/sony/tubads/proprietary/lib/libcam3_hwpipeline.so:system/lib/libcam3_hwpipeline.so \
- vendor/sony/tubads/proprietary/lib/libcam3_pipeline.so:system/lib/libcam3_pipeline.so \
- vendor/sony/tubads/proprietary/lib/libcam3_utils.so:system/lib/libcam3_utils.so \
- vendor/sony/tubads/proprietary/lib/libcamalgo.so:system/lib/libcamalgo.so \
  vendor/sony/tubads/proprietary/lib/libcam.camadapter.so:system/lib/libcam.camadapter.so \
  vendor/sony/tubads/proprietary/lib/libcam.camnode.so:system/lib/libcam.camnode.so \
  vendor/sony/tubads/proprietary/lib/libcam.camshot.so:system/lib/libcam.camshot.so \
  vendor/sony/tubads/proprietary/lib/libcam.client.so:system/lib/libcam.client.so \
  vendor/sony/tubads/proprietary/lib/libcam.device1.so:system/lib/libcam.device1.so \
  vendor/sony/tubads/proprietary/lib/libcam.device3.so:system/lib/libcam.device3.so \
- vendor/sony/tubads/proprietary/lib/libcamdrv.so:system/lib/libcamdrv.so \
- vendor/sony/tubads/proprietary/lib/libcameracustom.so:system/lib/libcameracustom.so \
  vendor/sony/tubads/proprietary/lib/libcam.exif.so:system/lib/libcam.exif.so \
  vendor/sony/tubads/proprietary/lib/libcam.exif.v3.so:system/lib/libcam.exif.v3.so \
  vendor/sony/tubads/proprietary/lib/libcam.hal3a.v3.dng.so:system/lib/libcam.hal3a.v3.dng.so \
  vendor/sony/tubads/proprietary/lib/libcam.hal3a.v3.so:system/lib/libcam.hal3a.v3.so \
  vendor/sony/tubads/proprietary/lib/libcam.halsensor.so:system/lib/libcam.halsensor.so \
- vendor/sony/tubads/proprietary/lib/libcam_hwutils.so:system/lib/libcam_hwutils.so \
  vendor/sony/tubads/proprietary/lib/libcam.iopipe.so:system/lib/libcam.iopipe.so \
- vendor/sony/tubads/proprietary/lib/libcam.metadataprovider.so:system/lib/libcam.metadataprovider.so \
  vendor/sony/tubads/proprietary/lib/libcam.metadata.so:system/lib/libcam.metadata.so \
- vendor/sony/tubads/proprietary/lib/libcam_mmp.so:system/lib/libcam_mmp.so \
+ vendor/sony/tubads/proprietary/lib/libcam.metadataprovider.so:system/lib/libcam.metadataprovider.so \
  vendor/sony/tubads/proprietary/lib/libcam.paramsmgr.so:system/lib/libcam.paramsmgr.so \
- vendor/sony/tubads/proprietary/lib/libcam_platform.so:system/lib/libcam_platform.so \
  vendor/sony/tubads/proprietary/lib/libcam.sdkclient.so:system/lib/libcam.sdkclient.so \
  vendor/sony/tubads/proprietary/lib/libcam.utils.cpuctrl.so:system/lib/libcam.utils.cpuctrl.so \
  vendor/sony/tubads/proprietary/lib/libcam.utils.sensorlistener.so:system/lib/libcam.utils.sensorlistener.so \
- vendor/sony/tubads/proprietary/lib/libcam_utils.so:system/lib/libcam_utils.so \
  vendor/sony/tubads/proprietary/lib/libcam.utils.so:system/lib/libcam.utils.so \
+ vendor/sony/tubads/proprietary/lib/libcam1_utils.so:system/lib/libcam1_utils.so \
+ vendor/sony/tubads/proprietary/lib/libcam3_app.so:system/lib/libcam3_app.so \
+ vendor/sony/tubads/proprietary/lib/libcam3_hwnode.so:system/lib/libcam3_hwnode.so \
+ vendor/sony/tubads/proprietary/lib/libcam3_hwpipeline.so:system/lib/libcam3_hwpipeline.so \
+ vendor/sony/tubads/proprietary/lib/libcam3_pipeline.so:system/lib/libcam3_pipeline.so \
+ vendor/sony/tubads/proprietary/lib/libcam3_utils.so:system/lib/libcam3_utils.so \
+ vendor/sony/tubads/proprietary/lib/libcam_hwutils.so:system/lib/libcam_hwutils.so \
+ vendor/sony/tubads/proprietary/lib/libcam_mmp.so:system/lib/libcam_mmp.so \
+ vendor/sony/tubads/proprietary/lib/libcam_platform.so:system/lib/libcam_platform.so \
+ vendor/sony/tubads/proprietary/lib/libcam_utils.so:system/lib/libcam_utils.so \
+ vendor/sony/tubads/proprietary/lib/libcamalgo.so:system/lib/libcamalgo.so \
+ vendor/sony/tubads/proprietary/lib/libcamdrv.so:system/lib/libcamdrv.so \
+ vendor/sony/tubads/proprietary/lib/libcameracustom.so:system/lib/libcameracustom.so \
  vendor/sony/tubads/proprietary/lib/libccci_util.so:system/lib/libccci_util.so \
- vendor/sony/tubads/proprietary/lib/libcurl.so:system/lib/libcurl.so \
  vendor/sony/tubads/proprietary/lib/libcustom_jni.so:system/lib/libcustom_jni.so \
  vendor/sony/tubads/proprietary/lib/libcustom_nvram.so:system/lib/libcustom_nvram.so \
  vendor/sony/tubads/proprietary/lib/libcustom_prop.so:system/lib/libcustom_prop.so \
@@ -428,101 +212,36 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/lib/libem_support_jni.so:system/lib/libem_support_jni.so \
  vendor/sony/tubads/proprietary/lib/libem_usb_jni.so:system/lib/libem_usb_jni.so \
  vendor/sony/tubads/proprietary/lib/libem_wifi_jni.so:system/lib/libem_wifi_jni.so \
- vendor/sony/tubads/proprietary/lib/libfeatureiodrv.so:system/lib/libfeatureiodrv.so \
  vendor/sony/tubads/proprietary/lib/libfeatureio.so:system/lib/libfeatureio.so \
+ vendor/sony/tubads/proprietary/lib/libfeatureiodrv.so:system/lib/libfeatureiodrv.so \
  vendor/sony/tubads/proprietary/lib/libfgauge.so:system/lib/libfgauge.so \
  vendor/sony/tubads/proprietary/lib/libfile_op.so:system/lib/libfile_op.so \
- vendor/sony/tubads/proprietary/lib/libfmcust.so:system/lib/libfmcust.so \
+ vendor/sony/tubads/proprietary/lib/libfusion.so:system/lib/libfusion.so \
  vendor/sony/tubads/proprietary/lib/libgas.so:system/lib/libgas.so \
  vendor/sony/tubads/proprietary/lib/libged.so:system/lib/libged.so \
  vendor/sony/tubads/proprietary/lib/libgpu_aux.so:system/lib/libgpu_aux.so \
  vendor/sony/tubads/proprietary/lib/libgralloc_extra.so:system/lib/libgralloc_extra.so \
  vendor/sony/tubads/proprietary/lib/libhdrproc.so:system/lib/libhdrproc.so \
  vendor/sony/tubads/proprietary/lib/libhwm.so:system/lib/libhwm.so \
- vendor/sony/tubads/proprietary/lib/libimageio_plat_drv.so:system/lib/libimageio_plat_drv.so \
  vendor/sony/tubads/proprietary/lib/libimageio.so:system/lib/libimageio.so \
- vendor/sony/tubads/proprietary/lib/libion_mtk.so:system/lib/libion_mtk.so \
+ vendor/sony/tubads/proprietary/lib/libimageio_plat_drv.so:system/lib/libimageio_plat_drv.so \
  vendor/sony/tubads/proprietary/lib/libion.so:system/lib/libion.so \
+ vendor/sony/tubads/proprietary/lib/libion_mtk.so:system/lib/libion_mtk.so \
  vendor/sony/tubads/proprietary/lib/libja3m.so:system/lib/libja3m.so \
- vendor/sony/tubads/proprietary/lib/libJniAtvService.so:system/lib/libJniAtvService.so \
  vendor/sony/tubads/proprietary/lib/libjni_pq.so:system/lib/libjni_pq.so \
- vendor/sony/tubads/proprietary/lib/libJpgDecPipe.so:system/lib/libJpgDecPipe.so \
- vendor/sony/tubads/proprietary/lib/libJpgEncPipe.so:system/lib/libJpgEncPipe.so \
+ vendor/sony/tubads/proprietary/lib/libm.so:system/lib/libm.so \
  vendor/sony/tubads/proprietary/lib/libm4u.so:system/lib/libm4u.so \
- vendor/sony/tubads/proprietary/lib/libmal.so:system/lib/libmal.so \
  vendor/sony/tubads/proprietary/lib/libmatv_cust.so:system/lib/libmatv_cust.so \
- vendor/sony/tubads/proprietary/lib/libmdfx.so:system/lib/libmdfx.so \
  vendor/sony/tubads/proprietary/lib/libmdloggerrecycle.so:system/lib/libmdloggerrecycle.so \
  vendor/sony/tubads/proprietary/lib/libmediatek_exceptionlog.so:system/lib/libmediatek_exceptionlog.so \
  vendor/sony/tubads/proprietary/lib/libmemoryDumpEncoder.so:system/lib/libmemoryDumpEncoder.so \
  vendor/sony/tubads/proprietary/lib/libmemorydumper.so:system/lib/libmemorydumper.so \
  vendor/sony/tubads/proprietary/lib/libmhalImageCodec.so:system/lib/libmhalImageCodec.so \
- vendor/sony/tubads/proprietary/lib/libMiraVision_jni.so:system/lib/libMiraVision_jni.so \
- vendor/sony/tubads/proprietary/lib/libmmprofile_jni.so:system/lib/libmmprofile_jni.so \
  vendor/sony/tubads/proprietary/lib/libmmprofile.so:system/lib/libmmprofile.so \
+ vendor/sony/tubads/proprietary/lib/libmmprofile_jni.so:system/lib/libmmprofile_jni.so \
  vendor/sony/tubads/proprietary/lib/libmmsdkservice.so:system/lib/libmmsdkservice.so \
  vendor/sony/tubads/proprietary/lib/libmnl.so:system/lib/libmnl.so \
  vendor/sony/tubads/proprietary/lib/libmp4enc_sa.ca7.so:system/lib/libmp4enc_sa.ca7.so \
- vendor/sony/tubads/proprietary/lib/libmrdump.so:system/lib/libmrdump.so \
- vendor/sony/tubads/proprietary/lib/libmsbc_mtk.so:system/lib/libmsbc_mtk.so \
- vendor/sony/tubads/proprietary/lib/libm.so:system/lib/libm.so \
- vendor/sony/tubads/proprietary/lib/libmtcloader.so:system/lib/libmtcloader.so \
- vendor/sony/tubads/proprietary/lib/libmtkcamera_client.so:system/lib/libmtkcamera_client.so \
- vendor/sony/tubads/proprietary/lib/libmtk_drvb.so:system/lib/libmtk_drvb.so \
- vendor/sony/tubads/proprietary/lib/libmtkjpeg.so:system/lib/libmtkjpeg.so \
- vendor/sony/tubads/proprietary/lib/libmtklimiter.so:system/lib/libmtklimiter.so \
- vendor/sony/tubads/proprietary/lib/libmtk_mmutils.so:system/lib/libmtk_mmutils.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxAdpcmDec.so:system/lib/libMtkOmxAdpcmDec.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxAdpcmEnc.so:system/lib/libMtkOmxAdpcmEnc.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxApeDec.so:system/lib/libMtkOmxApeDec.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxCore.so:system/lib/libMtkOmxCore.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxFlacDec.so:system/lib/libMtkOmxFlacDec.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxG711Dec.so:system/lib/libMtkOmxG711Dec.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxGsmDec.so:system/lib/libMtkOmxGsmDec.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxMp3Dec.so:system/lib/libMtkOmxMp3Dec.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxRawDec.so:system/lib/libMtkOmxRawDec.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxVdecEx.so:system/lib/libMtkOmxVdecEx.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxVenc.so:system/lib/libMtkOmxVenc.so \
- vendor/sony/tubads/proprietary/lib/libMtkOmxVorbisEnc.so:system/lib/libMtkOmxVorbisEnc.so \
- vendor/sony/tubads/proprietary/lib/libmtkplayer.so:system/lib/libmtkplayer.so \
- vendor/sony/tubads/proprietary/lib/libmtkshifter.so:system/lib/libmtkshifter.so \
- vendor/sony/tubads/proprietary/lib/libMtkVideoTranscoder.so:system/lib/libMtkVideoTranscoder.so \
- vendor/sony/tubads/proprietary/lib/libn3d3a.so:system/lib/libn3d3a.so \
- vendor/sony/tubads/proprietary/lib/libnativecheck-jni.so:system/lib/libnativecheck-jni.so \
- vendor/sony/tubads/proprietary/lib/libnetutils.so:system/lib/libnetutils.so \
- vendor/sony/tubads/proprietary/lib/libnvramagentclient.so:system/lib/libnvramagentclient.so \
- vendor/sony/tubads/proprietary/lib/libnvram_daemon_callback.so:system/lib/libnvram_daemon_callback.so \
- vendor/sony/tubads/proprietary/lib/libnvram_platform.so:system/lib/libnvram_platform.so \
- vendor/sony/tubads/proprietary/lib/libnvram_sec.so:system/lib/libnvram_sec.so \
- vendor/sony/tubads/proprietary/lib/libnvram.so:system/lib/libnvram.so \
- vendor/sony/tubads/proprietary/lib/libperfservicenative.so:system/lib/libperfservicenative.so \
- vendor/sony/tubads/proprietary/lib/libperfservice.so:system/lib/libperfservice.so \
- vendor/sony/tubads/proprietary/lib/libpq_cust.so:system/lib/libpq_cust.so \
- vendor/sony/tubads/proprietary/lib/libPQDCjni.so:system/lib/libPQDCjni.so \
- vendor/sony/tubads/proprietary/lib/libPQjni.so:system/lib/libPQjni.so \
- vendor/sony/tubads/proprietary/lib/libpq_prot.so:system/lib/libpq_prot.so \
- vendor/sony/tubads/proprietary/lib/libpqservice.so:system/lib/libpqservice.so \
- vendor/sony/tubads/proprietary/lib/librilmtkmd2.so:system/lib/librilmtkmd2.so \
- vendor/sony/tubads/proprietary/lib/librilmtk.so:system/lib/librilmtk.so \
- vendor/sony/tubads/proprietary/lib/libshowlogo.so:system/lib/libshowlogo.so \
- vendor/sony/tubads/proprietary/lib/libSonyIMX230PdafLibrary.so:system/lib/libSonyIMX230PdafLibrary.so \
- vendor/sony/tubads/proprietary/lib/libspeech_enh_lib.so:system/lib/libspeech_enh_lib.so \
- vendor/sony/tubads/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
- vendor/sony/tubads/proprietary/lib/libSwJpgCodec.so:system/lib/libSwJpgCodec.so \
- vendor/sony/tubads/proprietary/lib/libthermalalgo.so:system/lib/libthermalalgo.so \
- vendor/sony/tubads/proprietary/lib/libtimestretch.so:system/lib/libtimestretch.so \
- vendor/sony/tubads/proprietary/lib/libtouchfilter.so:system/lib/libtouchfilter.so \
- vendor/sony/tubads/proprietary/lib/libudf.so:system/lib/libudf.so \
- vendor/sony/tubads/proprietary/lib/libui.so:system/lib/libui.so \
- vendor/sony/tubads/proprietary/lib/libvc1dec_sa.ca7.so:system/lib/libvc1dec_sa.ca7.so \
- vendor/sony/tubads/proprietary/lib/libvcodecdrv.so:system/lib/libvcodecdrv.so \
- vendor/sony/tubads/proprietary/lib/libvcodec_oal.so:system/lib/libvcodec_oal.so \
- vendor/sony/tubads/proprietary/lib/libvcodec_utility.so:system/lib/libvcodec_utility.so \
- vendor/sony/tubads/proprietary/lib/libvp8dec_sa.ca7.so:system/lib/libvp8dec_sa.ca7.so \
- vendor/sony/tubads/proprietary/lib/libvp8enc_sa.ca7.so:system/lib/libvp8enc_sa.ca7.so \
- vendor/sony/tubads/proprietary/lib/libvp9dec_sa.ca7.so:system/lib/libvp9dec_sa.ca7.so \
- vendor/sony/tubads/proprietary/lib/libDR.so:system/lib/libDR.so \
- vendor/sony/tubads/proprietary/lib/libfusion.so:system/lib/libfusion.so \
  vendor/sony/tubads/proprietary/lib/libmpe.driver.so:system/lib/libmpe.driver.so \
  vendor/sony/tubads/proprietary/lib/libmpe.sensorlistener.so:system/lib/libmpe.sensorlistener.so \
  vendor/sony/tubads/proprietary/lib/libmrdump.so:system/lib/libmrdump.so \
@@ -562,37 +281,532 @@ PRODUCT_COPY_FILES += \
  vendor/sony/tubads/proprietary/lib/libvp8dec_sa.ca7.so:system/lib/libvp8dec_sa.ca7.so \
  vendor/sony/tubads/proprietary/lib/libvp8enc_sa.ca7.so:system/lib/libvp8enc_sa.ca7.so \
  vendor/sony/tubads/proprietary/lib/libvp9dec_sa.ca7.so:system/lib/libvp9dec_sa.ca7.so \
- vendor/sony/tubads/proprietary/lib/mtk-rilmd2.so:system/lib/mtk-rilmd2.so \
- vendor/sony/tubads/proprietary/lib/mtk-ril.so:system/lib/mtk-ril.so \
- vendor/sony/tubads/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
+ vendor/sony/tubads/proprietary/lib64/egl/libGLES_mali.so:system/lib64/egl/libGLES_mali.so \
+ vendor/sony/tubads/proprietary/lib64/hw/audio.primary.mt6755.so:system/lib64/hw/audio.primary.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/hw/camera.mt6755.so:system/lib64/hw/camera.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/hw/gps.mt6755.so:system/lib64/hw/gps.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/hw/gralloc.mt6755.so:system/lib64/hw/gralloc.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/hw/hwcomposer.mt6755.so:system/lib64/hw/hwcomposer.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/hw/lights.mt6755.so:system/lib64/hw/lights.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/hw/memtrack.mt6755.so:system/lib64/hw/memtrack.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/hw/mmsdk.mt6755.so:system/lib64/hw/mmsdk.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/hw/sensors.mt6755.so:system/lib64/hw/sensors.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/lib3a.so:system/lib64/lib3a.so \
+ vendor/sony/tubads/proprietary/lib64/lib3a_sample.so:system/lib64/lib3a_sample.so \
+ vendor/sony/tubads/proprietary/lib64/libBnMtkCodec.so:system/lib64/libBnMtkCodec.so \
+ vendor/sony/tubads/proprietary/lib64/libJpgDecPipe.so:system/lib64/libJpgDecPipe.so \
+ vendor/sony/tubads/proprietary/lib64/libJpgEncPipe.so:system/lib64/libJpgEncPipe.so \
+ vendor/sony/tubads/proprietary/lib64/libMtkOmxCore.so:system/lib64/libMtkOmxCore.so \
+ vendor/sony/tubads/proprietary/lib64/libMtkVideoTranscoder.so:system/lib64/libMtkVideoTranscoder.so \
+ vendor/sony/tubads/proprietary/lib64/libPQDCjni.so:system/lib64/libPQDCjni.so \
+ vendor/sony/tubads/proprietary/lib64/libPQjni.so:system/lib64/libPQjni.so \
+ vendor/sony/tubads/proprietary/lib64/libSonyIMX230PdafLibrary.so:system/lib64/libSonyIMX230PdafLibrary.so \
+ vendor/sony/tubads/proprietary/lib64/libSwJpgCodec.so:system/lib64/libSwJpgCodec.so \
+ vendor/sony/tubads/proprietary/lib64/liba3m.so:system/lib64/liba3m.so \
+ vendor/sony/tubads/proprietary/lib64/libacdk.so:system/lib64/libacdk.so \
+ vendor/sony/tubads/proprietary/lib64/libaed.so:system/lib64/libaed.so \
+ vendor/sony/tubads/proprietary/lib64/libatvctrlservice.so:system/lib64/libatvctrlservice.so \
+ vendor/sony/tubads/proprietary/lib64/libaudio_param_parser.so:system/lib64/libaudio_param_parser.so \
+ vendor/sony/tubads/proprietary/lib64/libaudiocompensationfilter.so:system/lib64/libaudiocompensationfilter.so \
+ vendor/sony/tubads/proprietary/lib64/libaudiocomponentengine.so:system/lib64/libaudiocomponentengine.so \
+ vendor/sony/tubads/proprietary/lib64/libaudiocustparam.so:system/lib64/libaudiocustparam.so \
+ vendor/sony/tubads/proprietary/lib64/libaudiodcrflt.so:system/lib64/libaudiodcrflt.so \
+ vendor/sony/tubads/proprietary/lib64/libaudiopolicymanager.so:system/lib64/libaudiopolicymanager.so \
+ vendor/sony/tubads/proprietary/lib64/libaudiopolicymanagerdefault.so:system/lib64/libaudiopolicymanagerdefault.so \
+ vendor/sony/tubads/proprietary/lib64/libaudiosetting.so:system/lib64/libaudiosetting.so \
+ vendor/sony/tubads/proprietary/lib64/libbessound_hd_mtk.so:system/lib64/libbessound_hd_mtk.so \
+ vendor/sony/tubads/proprietary/lib64/libblisrc.so:system/lib64/libblisrc.so \
+ vendor/sony/tubads/proprietary/lib64/libblisrc32.so:system/lib64/libblisrc32.so \
+ vendor/sony/tubads/proprietary/lib64/libbluetooth_mtk.so:system/lib64/libbluetooth_mtk.so \
+ vendor/sony/tubads/proprietary/lib64/libbluetooth_mtk_pure.so:system/lib64/libbluetooth_mtk_pure.so \
+ vendor/sony/tubads/proprietary/lib64/libbluetooth_relayer.so:system/lib64/libbluetooth_relayer.so \
+ vendor/sony/tubads/proprietary/lib64/libbluetoothem_mtk.so:system/lib64/libbluetoothem_mtk.so \
+ vendor/sony/tubads/proprietary/lib64/libbwc.so:system/lib64/libbwc.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.camadapter.so:system/lib64/libcam.camadapter.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.camnode.so:system/lib64/libcam.camnode.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.camshot.so:system/lib64/libcam.camshot.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.client.so:system/lib64/libcam.client.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.device1.so:system/lib64/libcam.device1.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.device3.so:system/lib64/libcam.device3.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.exif.so:system/lib64/libcam.exif.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.exif.v3.so:system/lib64/libcam.exif.v3.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.hal3a.v3.dng.so:system/lib64/libcam.hal3a.v3.dng.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.hal3a.v3.so:system/lib64/libcam.hal3a.v3.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.halsensor.so:system/lib64/libcam.halsensor.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.iopipe.so:system/lib64/libcam.iopipe.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.metadata.so:system/lib64/libcam.metadata.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.metadataprovider.so:system/lib64/libcam.metadataprovider.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.paramsmgr.so:system/lib64/libcam.paramsmgr.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.sdkclient.so:system/lib64/libcam.sdkclient.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.utils.cpuctrl.so:system/lib64/libcam.utils.cpuctrl.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.utils.sensorlistener.so:system/lib64/libcam.utils.sensorlistener.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.utils.so:system/lib64/libcam.utils.so \
+ vendor/sony/tubads/proprietary/lib64/libcam1_utils.so:system/lib64/libcam1_utils.so \
+ vendor/sony/tubads/proprietary/lib64/libcam3_app.so:system/lib64/libcam3_app.so \
+ vendor/sony/tubads/proprietary/lib64/libcam3_hwnode.so:system/lib64/libcam3_hwnode.so \
+ vendor/sony/tubads/proprietary/lib64/libcam3_hwpipeline.so:system/lib64/libcam3_hwpipeline.so \
+ vendor/sony/tubads/proprietary/lib64/libcam3_pipeline.so:system/lib64/libcam3_pipeline.so \
+ vendor/sony/tubads/proprietary/lib64/libcam3_utils.so:system/lib64/libcam3_utils.so \
+ vendor/sony/tubads/proprietary/lib64/libcam_hwutils.so:system/lib64/libcam_hwutils.so \
+ vendor/sony/tubads/proprietary/lib64/libcam_mmp.so:system/lib64/libcam_mmp.so \
+ vendor/sony/tubads/proprietary/lib64/libcam_platform.so:system/lib64/libcam_platform.so \
+ vendor/sony/tubads/proprietary/lib64/libcam_utils.so:system/lib64/libcam_utils.so \
+ vendor/sony/tubads/proprietary/lib64/libcamalgo.so:system/lib64/libcamalgo.so \
+ vendor/sony/tubads/proprietary/lib64/libcamdrv.so:system/lib64/libcamdrv.so \
+ vendor/sony/tubads/proprietary/lib64/libcameracustom.so:system/lib64/libcameracustom.so \
+ vendor/sony/tubads/proprietary/lib64/libccci_util.so:system/lib64/libccci_util.so \
+ vendor/sony/tubads/proprietary/lib64/libcustom_jni.so:system/lib64/libcustom_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libcustom_nvram.so:system/lib64/libcustom_nvram.so \
+ vendor/sony/tubads/proprietary/lib64/libcustom_prop.so:system/lib64/libcustom_prop.so \
+ vendor/sony/tubads/proprietary/lib64/libcvsd_mtk.so:system/lib64/libcvsd_mtk.so \
+ vendor/sony/tubads/proprietary/lib64/libdirect-coredump.so:system/lib64/libdirect-coredump.so \
+ vendor/sony/tubads/proprietary/lib64/libdngop.so:system/lib64/libdngop.so \
+ vendor/sony/tubads/proprietary/lib64/libdpframework.so:system/lib64/libdpframework.so \
+ vendor/sony/tubads/proprietary/lib64/libdrmmtkutil.so:system/lib64/libdrmmtkutil.so \
+ vendor/sony/tubads/proprietary/lib64/libdrmmtkwhitelist.so:system/lib64/libdrmmtkwhitelist.so \
+ vendor/sony/tubads/proprietary/lib64/libeffect.facebeautypp.so:system/lib64/libeffect.facebeautypp.so \
+ vendor/sony/tubads/proprietary/lib64/libeffecthal.JPG.so:system/lib64/libeffecthal.JPG.so \
+ vendor/sony/tubads/proprietary/lib64/libem_bt_jni.so:system/lib64/libem_bt_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libem_gpio_jni.so:system/lib64/libem_gpio_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libem_lte_jni.so:system/lib64/libem_lte_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libem_modem_jni.so:system/lib64/libem_modem_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libem_sensor_jni.so:system/lib64/libem_sensor_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libem_support_jni.so:system/lib64/libem_support_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libem_usb_jni.so:system/lib64/libem_usb_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libem_wifi_jni.so:system/lib64/libem_wifi_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libfeatureio.so:system/lib64/libfeatureio.so \
+ vendor/sony/tubads/proprietary/lib64/libfeatureiodrv.so:system/lib64/libfeatureiodrv.so \
+ vendor/sony/tubads/proprietary/lib64/libfile_op.so:system/lib64/libfile_op.so \
+ vendor/sony/tubads/proprietary/lib64/libgas.so:system/lib64/libgas.so \
+ vendor/sony/tubads/proprietary/lib64/libged.so:system/lib64/libged.so \
+ vendor/sony/tubads/proprietary/lib64/libgpu_aux.so:system/lib64/libgpu_aux.so \
+ vendor/sony/tubads/proprietary/lib64/libgralloc_extra.so:system/lib64/libgralloc_extra.so \
+ vendor/sony/tubads/proprietary/lib64/libhdrproc.so:system/lib64/libhdrproc.so \
+ vendor/sony/tubads/proprietary/lib64/libhwm.so:system/lib64/libhwm.so \
+ vendor/sony/tubads/proprietary/lib64/libimageio.so:system/lib64/libimageio.so \
+ vendor/sony/tubads/proprietary/lib64/libimageio_plat_drv.so:system/lib64/libimageio_plat_drv.so \
+ vendor/sony/tubads/proprietary/lib64/libion.so:system/lib64/libion.so \
+ vendor/sony/tubads/proprietary/lib64/libion_mtk.so:system/lib64/libion_mtk.so \
+ vendor/sony/tubads/proprietary/lib64/libja3m.so:system/lib64/libja3m.so \
+ vendor/sony/tubads/proprietary/lib64/libjni_pq.so:system/lib64/libjni_pq.so \
+ vendor/sony/tubads/proprietary/lib64/libm4u.so:system/lib64/libm4u.so \
+ vendor/sony/tubads/proprietary/lib64/libmatv_cust.so:system/lib64/libmatv_cust.so \
+ vendor/sony/tubads/proprietary/lib64/libmdloggerrecycle.so:system/lib64/libmdloggerrecycle.so \
+ vendor/sony/tubads/proprietary/lib64/libmediatek_exceptionlog.so:system/lib64/libmediatek_exceptionlog.so \
+ vendor/sony/tubads/proprietary/lib64/libmemoryDumpEncoder.so:system/lib64/libmemoryDumpEncoder.so \
+ vendor/sony/tubads/proprietary/lib64/libmemorydumper.so:system/lib64/libmemorydumper.so \
+ vendor/sony/tubads/proprietary/lib64/libmhalImageCodec.so:system/lib64/libmhalImageCodec.so \
+ vendor/sony/tubads/proprietary/lib64/libmmprofile.so:system/lib64/libmmprofile.so \
+ vendor/sony/tubads/proprietary/lib64/libmmprofile_jni.so:system/lib64/libmmprofile_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libmmsdkservice.so:system/lib64/libmmsdkservice.so \
+ vendor/sony/tubads/proprietary/lib64/libmrdump.so:system/lib64/libmrdump.so \
+ vendor/sony/tubads/proprietary/lib64/libmsbc_mtk.so:system/lib64/libmsbc_mtk.so \
+ vendor/sony/tubads/proprietary/lib64/libmtk_drvb.so:system/lib64/libmtk_drvb.so \
+ vendor/sony/tubads/proprietary/lib64/libmtk_mmutils.so:system/lib64/libmtk_mmutils.so \
+ vendor/sony/tubads/proprietary/lib64/libmtkcamera_client.so:system/lib64/libmtkcamera_client.so \
+ vendor/sony/tubads/proprietary/lib64/libmtkjpeg.so:system/lib64/libmtkjpeg.so \
+ vendor/sony/tubads/proprietary/lib64/libmtklimiter.so:system/lib64/libmtklimiter.so \
+ vendor/sony/tubads/proprietary/lib64/libmtkshifter.so:system/lib64/libmtkshifter.so \
+ vendor/sony/tubads/proprietary/lib64/libn3d3a.so:system/lib64/libn3d3a.so \
+ vendor/sony/tubads/proprietary/lib64/libnativecheck-jni.so:system/lib64/libnativecheck-jni.so \
+ vendor/sony/tubads/proprietary/lib64/libnetutils.so:system/lib64/libnetutils.so \
+ vendor/sony/tubads/proprietary/lib64/libnvram.so:system/lib64/libnvram.so \
+ vendor/sony/tubads/proprietary/lib64/libnvram_daemon_callback.so:system/lib64/libnvram_daemon_callback.so \
+ vendor/sony/tubads/proprietary/lib64/libnvram_platform.so:system/lib64/libnvram_platform.so \
+ vendor/sony/tubads/proprietary/lib64/libnvram_sec.so:system/lib64/libnvram_sec.so \
+ vendor/sony/tubads/proprietary/lib64/libnvramagentclient.so:system/lib64/libnvramagentclient.so \
+ vendor/sony/tubads/proprietary/lib64/libperfservice.so:system/lib64/libperfservice.so \
+ vendor/sony/tubads/proprietary/lib64/libperfservicenative.so:system/lib64/libperfservicenative.so \
+ vendor/sony/tubads/proprietary/lib64/libpq_cust.so:system/lib64/libpq_cust.so \
+ vendor/sony/tubads/proprietary/lib64/libpq_prot.so:system/lib64/libpq_prot.so \
+ vendor/sony/tubads/proprietary/lib64/libpqservice.so:system/lib64/libpqservice.so \
+ vendor/sony/tubads/proprietary/lib64/libspeech_enh_lib.so:system/lib64/libspeech_enh_lib.so \
+ vendor/sony/tubads/proprietary/lib64/libstagefrighthw.so:system/lib64/libstagefrighthw.so \
+ vendor/sony/tubads/proprietary/lib64/libterservice.so:system/lib64/libterservice.so \
+ vendor/sony/tubads/proprietary/lib64/libtouchfilter.so:system/lib64/libtouchfilter.so \
+ vendor/sony/tubads/proprietary/lib64/libudf.so:system/lib64/libudf.so \
+ vendor/sony/tubads/proprietary/lib64/libui.so:system/lib64/libui.so \
+ vendor/sony/tubads/proprietary/lib64/libvcodec_utility.so:system/lib64/libvcodec_utility.so \
+ vendor/sony/tubads/proprietary/lib64/libvcodecdrv.so:system/lib64/libvcodecdrv.so \
+ vendor/sony/tubads/proprietary/lib64/libwifitest.so:system/lib64/libwifitest.so \
  vendor/sony/tubads/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+ vendor/sony/tubads/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+ vendor/sony/tubads/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+ vendor/sony/tubads/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+ vendor/sony/tubads/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+ vendor/sony/tubads/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+ vendor/sony/tubads/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
+ vendor/sony/tubads/proprietary/xbin/BGW:system/xbin/BGW \
+ vendor/sony/tubads/proprietary/xbin/MPED:system/xbin/MPED \
+ vendor/sony/tubads/proprietary/xbin/mnld:system/xbin/mnld \
+ vendor/sony/tubads/proprietary/etc/firmware/em_filter_1_ulwctg_n.bin:system/etc/firmware/em_filter_1_ulwctg_n.bin \
+ vendor/sony/tubads/proprietary/lib/libeffects.so:system/lib/libeffects.so \
+ vendor/sony/tubads/proprietary/lib64/libeffects.so:system/lib64/libeffects.so \
+ vendor/sony/tubads/proprietary/bin/aal:system/bin/aal \
+ vendor/sony/tubads/proprietary/bin/aee_dumpstate:system/bin/aee_dumpstate \
+ vendor/sony/tubads/proprietary/bin/apfd:system/bin/apfd \
+ vendor/sony/tubads/proprietary/bin/applysig:system/bin/applysig \
+ vendor/sony/tubads/proprietary/bin/badblocks:system/bin/badblocks \
+ vendor/sony/tubads/proprietary/bin/charon:system/bin/charon \
+ vendor/sony/tubads/proprietary/bin/crashmonitorns:system/bin/crashmonitorns \
+ vendor/sony/tubads/proprietary/bin/downloader:system/bin/downloader \
+ vendor/sony/tubads/proprietary/bin/elantest:system/bin/elantest \
+ vendor/sony/tubads/proprietary/bin/epdg_wod:system/bin/epdg_wod \
+ vendor/sony/tubads/proprietary/bin/exfatck:system/bin/exfatck \
+ vendor/sony/tubads/proprietary/bin/exfatdebug:system/bin/exfatdebug \
+ vendor/sony/tubads/proprietary/bin/exfatinfo:system/bin/exfatinfo \
+ vendor/sony/tubads/proprietary/bin/exfatlabel:system/bin/exfatlabel \
+ vendor/sony/tubads/proprietary/bin/exfatvsn:system/bin/exfatvsn \
+ vendor/sony/tubads/proprietary/bin/factory:system/bin/factory \
+ vendor/sony/tubads/proprietary/bin/fota-trigger:system/bin/fota-trigger \
+ vendor/sony/tubads/proprietary/bin/fotabinder:system/bin/fotabinder \
+ vendor/sony/tubads/proprietary/bin/gmadfs:system/bin/gmadfs \
+ vendor/sony/tubads/proprietary/bin/grep:system/bin/grep \
+ vendor/sony/tubads/proprietary/bin/gzip_static:system/bin/gzip_static \
+ vendor/sony/tubads/proprietary/bin/hdcp-conf:system/bin/hdcp-conf \
+ vendor/sony/tubads/proprietary/bin/idd-logreader:system/bin/idd-logreader \
+ vendor/sony/tubads/proprietary/bin/iddd:system/bin/iddd \
+ vendor/sony/tubads/proprietary/bin/ipsec:system/bin/ipsec \
+ vendor/sony/tubads/proprietary/bin/killcaches:system/bin/killcaches \
+ vendor/sony/tubads/proprietary/bin/klogcat:system/bin/klogcat \
+ vendor/sony/tubads/proprietary/bin/lcdc_screen_cap:system/bin/lcdc_screen_cap \
+ vendor/sony/tubads/proprietary/bin/led_service:system/bin/led_service \
+ vendor/sony/tubads/proprietary/bin/make_f2fs:system/bin/make_f2fs \
+ vendor/sony/tubads/proprietary/bin/mcDriverDaemon:system/bin/mcDriverDaemon \
+ vendor/sony/tubads/proprietary/bin/memorydumper:system/bin/memorydumper \
+ vendor/sony/tubads/proprietary/bin/meta_tst:system/bin/meta_tst \
+ vendor/sony/tubads/proprietary/bin/mkexfat:system/bin/mkexfat \
+ vendor/sony/tubads/proprietary/bin/mmp:system/bin/mmp \
+ vendor/sony/tubads/proprietary/bin/moddir:system/bin/moddir \
+ vendor/sony/tubads/proprietary/bin/mount.ecryptfs:system/bin/mount.ecryptfs \
+ vendor/sony/tubads/proprietary/bin/mtkmal:system/bin/mtkmal \
+ vendor/sony/tubads/proprietary/bin/multi-cdf-symlinker.sh:system/bin/multi-cdf-symlinker.sh \
+ vendor/sony/tubads/proprietary/bin/nvram_write:system/bin/nvram_write \
+ vendor/sony/tubads/proprietary/bin/openshort_test:system/bin/openshort_test \
+ vendor/sony/tubads/proprietary/bin/ota-config-updater.sh:system/bin/ota-config-updater.sh \
+ vendor/sony/tubads/proprietary/bin/perf_native_test:system/bin/perf_native_test \
+ vendor/sony/tubads/proprietary/bin/pl_nvram_write:system/bin/pl_nvram_write \
+ vendor/sony/tubads/proprietary/bin/prom_disc:system/bin/prom_disc \
+ vendor/sony/tubads/proprietary/bin/qns:system/bin/qns \
+ vendor/sony/tubads/proprietary/bin/rda:system/bin/rda \
+ vendor/sony/tubads/proprietary/bin/resize_ext4:system/bin/resize_ext4 \
+ vendor/sony/tubads/proprietary/bin/rtt:system/bin/rtt \
+ vendor/sony/tubads/proprietary/bin/scd:system/bin/scd \
+ vendor/sony/tubads/proprietary/bin/scdnotifier:system/bin/scdnotifier \
+ vendor/sony/tubads/proprietary/bin/secd:system/bin/secd \
+ vendor/sony/tubads/proprietary/bin/sink:system/bin/sink \
+ vendor/sony/tubads/proprietary/bin/slpd:system/bin/slpd \
+ vendor/sony/tubads/proprietary/bin/source:system/bin/source \
+ vendor/sony/tubads/proprietary/bin/starter:system/bin/starter \
+ vendor/sony/tubads/proprietary/bin/startup-prober:system/bin/startup-prober \
+ vendor/sony/tubads/proprietary/bin/stroke:system/bin/stroke \
+ vendor/sony/tubads/proprietary/bin/superumount:system/bin/superumount \
+ vendor/sony/tubads/proprietary/bin/taimport:system/bin/taimport \
+ vendor/sony/tubads/proprietary/bin/ta_ccci_service:system/bin/ta_ccci_service \
+ vendor/sony/tubads/proprietary/bin/tbase_helperd:system/bin/tbase_helperd \
+ vendor/sony/tubads/proprietary/bin/tertestclient:system/bin/tertestclient \
+ vendor/sony/tubads/proprietary/bin/tiny_mkswap:system/bin/tiny_mkswap \
+ vendor/sony/tubads/proprietary/bin/tiny_swapoff:system/bin/tiny_swapoff \
+ vendor/sony/tubads/proprietary/bin/tiny_swapon:system/bin/tiny_swapon \
+ vendor/sony/tubads/proprietary/bin/tpm-service:system/bin/tpm-service \
+ vendor/sony/tubads/proprietary/bin/umount.ecryptfs:system/bin/umount.ecryptfs \
+ vendor/sony/tubads/proprietary/bin/updatemiscta:system/bin/updatemiscta \
+ vendor/sony/tubads/proprietary/bin/volte_imcb:system/bin/volte_imcb \
+ vendor/sony/tubads/proprietary/bin/volte_stack:system/bin/volte_stack \
+ vendor/sony/tubads/proprietary/bin/volte_ua:system/bin/volte_ua \
+ vendor/sony/tubads/proprietary/bin/wfca:system/bin/wfca \
+ vendor/sony/tubads/proprietary/bin/xssm:system/bin/xssm \
+ vendor/sony/tubads/proprietary/bin/yamaha537:system/bin/yamaha537 \
+ vendor/sony/tubads/proprietary/lib/libaal.so:system/lib/libaal.so \
+ vendor/sony/tubads/proprietary/lib/libaal_cust.so:system/lib/libaal_cust.so \
+ vendor/sony/tubads/proprietary/lib/libamphotofix.so:system/lib/libamphotofix.so \
+ vendor/sony/tubads/proprietary/lib/libamrvt.so:system/lib/libamrvt.so \
+ vendor/sony/tubads/proprietary/lib/libamr_wrap.so:system/lib/libamr_wrap.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_antishaking.so:system/lib/libarcsoft_antishaking.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_condition_detection.so:system/lib/libarcsoft_condition_detection.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_detection_base.so:system/lib/libarcsoft_detection_base.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_dro.so:system/lib/libarcsoft_dro.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_dynamic_light.so:system/lib/libarcsoft_dynamic_light.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_face_detection.so:system/lib/libarcsoft_face_detection.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_motiondetection.so:system/lib/libarcsoft_motiondetection.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_nightzoom.so:system/lib/libarcsoft_nightzoom.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_object_tracking.so:system/lib/libarcsoft_object_tracking.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_picauto.so:system/lib/libarcsoft_picauto.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_piczoom.so:system/lib/libarcsoft_piczoom.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_rer.so:system/lib/libarcsoft_rer.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_selfie_correction.so:system/lib/libarcsoft_selfie_correction.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_smart_denoise.so:system/lib/libarcsoft_smart_denoise.so \
+ vendor/sony/tubads/proprietary/lib/libarcsoft_smile_detection.so:system/lib/libarcsoft_smile_detection.so \
+ vendor/sony/tubads/proprietary/lib/libawb_wrap.so:system/lib/libawb_wrap.so \
+ vendor/sony/tubads/proprietary/lib/libbluetooth_hw_test.so:system/lib/libbluetooth_hw_test.so \
+ vendor/sony/tubads/proprietary/lib/libbt-aptX-ARM-4.2.2.so:system/lib/libbt-aptX-ARM-4.2.2.so \
+ vendor/sony/tubads/proprietary/lib/libcam.jni.lomohaljni.so:system/lib/libcam.jni.lomohaljni.so \
+ vendor/sony/tubads/proprietary/lib/libcharon.so:system/lib/libcharon.so \
+ vendor/sony/tubads/proprietary/lib/libcommonpawrapper.so:system/lib/libcommonpawrapper.so \
+ vendor/sony/tubads/proprietary/lib/libcomutils.so:system/lib/libcomutils.so \
+ vendor/sony/tubads/proprietary/lib/libcredential-manager-service.so:system/lib/libcredential-manager-service.so \
+ vendor/sony/tubads/proprietary/lib/libcrypto-ss.so:system/lib/libcrypto-ss.so \
+ vendor/sony/tubads/proprietary/lib/libcurl-ss.so:system/lib/libcurl-ss.so \
+ vendor/sony/tubads/proprietary/lib/libdevice_security.so:system/lib/libdevice_security.so \
+ vendor/sony/tubads/proprietary/lib/libdisplayservice.so:system/lib/libdisplayservice.so \
+ vendor/sony/tubads/proprietary/lib/libdlnaplayer.so:system/lib/libdlnaplayer.so \
+ vendor/sony/tubads/proprietary/lib/libem_audio_jni.so:system/lib/libem_audio_jni.so \
+ vendor/sony/tubads/proprietary/lib/libext2fs.so:system/lib/libext2fs.so \
+ vendor/sony/tubads/proprietary/lib/libext2_blkid.so:system/lib/libext2_blkid.so \
+ vendor/sony/tubads/proprietary/lib/libext2_com_err.so:system/lib/libext2_com_err.so \
+ vendor/sony/tubads/proprietary/lib/libext2_e2p.so:system/lib/libext2_e2p.so \
+ vendor/sony/tubads/proprietary/lib/libext2_profile.so:system/lib/libext2_profile.so \
+ vendor/sony/tubads/proprietary/lib/libext2_uuid.so:system/lib/libext2_uuid.so \
+ vendor/sony/tubads/proprietary/lib/libextended_boot_lock.so:system/lib/libextended_boot_lock.so \
+ vendor/sony/tubads/proprietary/lib/libfeatureio.cfb.so:system/lib/libfeatureio.cfb.so \
+ vendor/sony/tubads/proprietary/lib/libfeatureio.featurefactory.so:system/lib/libfeatureio.featurefactory.so \
+ vendor/sony/tubads/proprietary/lib/libfeatureio.jpg.so:system/lib/libfeatureio.jpg.so \
+ vendor/sony/tubads/proprietary/lib/libfrpflag.so:system/lib/libfrpflag.so \
+ vendor/sony/tubads/proprietary/lib/libgaanalytics.so:system/lib/libgaanalytics.so \
+ vendor/sony/tubads/proprietary/lib/libgui_ext.so:system/lib/libgui_ext.so \
+ vendor/sony/tubads/proprietary/lib/libh264enc_sa.ca7.so:system/lib/libh264enc_sa.ca7.so \
+ vendor/sony/tubads/proprietary/lib/libh264enc_sb.ca7.so:system/lib/libh264enc_sb.ca7.so \
+ vendor/sony/tubads/proprietary/lib/libhdcprx_module.so:system/lib/libhdcprx_module.so \
+ vendor/sony/tubads/proprietary/lib/libhdcptx_module.so:system/lib/libhdcptx_module.so \
+ vendor/sony/tubads/proprietary/lib/libHEVCdec_sa.ca7.android.so:system/lib/libHEVCdec_sa.ca7.android.so \
+ vendor/sony/tubads/proprietary/lib/libhotknot_vendor.so:system/lib/libhotknot_vendor.so \
+ vendor/sony/tubads/proprietary/lib/libhydra.so:system/lib/libhydra.so \
+ vendor/sony/tubads/proprietary/lib/libidd.so:system/lib/libidd.so \
+ vendor/sony/tubads/proprietary/lib/libiddjni.so:system/lib/libiddjni.so \
+ vendor/sony/tubads/proprietary/lib/libimsma.so:system/lib/libimsma.so \
+ vendor/sony/tubads/proprietary/lib/libimsma_rtp.so:system/lib/libimsma_rtp.so \
+ vendor/sony/tubads/proprietary/lib/libimsma_socketwrapper.so:system/lib/libimsma_socketwrapper.so \
+ vendor/sony/tubads/proprietary/lib/libjhead.so:system/lib/libjhead.so \
+ vendor/sony/tubads/proprietary/lib/libjni_lomoeffect.so:system/lib/libjni_lomoeffect.so \
+ vendor/sony/tubads/proprietary/lib/libjtranscode.so:system/lib/libjtranscode.so \
+ vendor/sony/tubads/proprietary/lib/libklog.so:system/lib/libklog.so \
+ vendor/sony/tubads/proprietary/lib/liblic_divx.so:system/lib/liblic_divx.so \
+ vendor/sony/tubads/proprietary/lib/liblic_s263.so:system/lib/liblic_s263.so \
+ vendor/sony/tubads/proprietary/lib/liblights-core.so:system/lib/liblights-core.so \
+ vendor/sony/tubads/proprietary/lib/libmal_datamngr.so:system/lib/libmal_datamngr.so \
+ vendor/sony/tubads/proprietary/lib/libmal_epdga.so:system/lib/libmal_epdga.so \
+ vendor/sony/tubads/proprietary/lib/libmal_imsmngr.so:system/lib/libmal_imsmngr.so \
+ vendor/sony/tubads/proprietary/lib/libmal_mdmngr.so:system/lib/libmal_mdmngr.so \
+ vendor/sony/tubads/proprietary/lib/libmal_nwmngr.so:system/lib/libmal_nwmngr.so \
+ vendor/sony/tubads/proprietary/lib/libmal_rds.so:system/lib/libmal_rds.so \
+ vendor/sony/tubads/proprietary/lib/libmal_rilproxy.so:system/lib/libmal_rilproxy.so \
+ vendor/sony/tubads/proprietary/lib/libmal_simmngr.so:system/lib/libmal_simmngr.so \
+ vendor/sony/tubads/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
+ vendor/sony/tubads/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
+ vendor/sony/tubads/proprietary/lib/libMiraVision_jni.so:system/lib/libMiraVision_jni.so \
+ vendor/sony/tubads/proprietary/lib/libmiscta.so:system/lib/libmiscta.so \
+ vendor/sony/tubads/proprietary/lib/libMiscTaAccessor.so:system/lib/libMiscTaAccessor.so \
+ vendor/sony/tubads/proprietary/lib/libMiscTAApi.so:system/lib/libMiscTAApi.so \
+ vendor/sony/tubads/proprietary/lib/libmisctalogger.so:system/lib/libmisctalogger.so \
+ vendor/sony/tubads/proprietary/lib/libmmsdkservice.feature.so:system/lib/libmmsdkservice.feature.so \
+ vendor/sony/tubads/proprietary/lib/libmorpho_video_refiner.so:system/lib/libmorpho_video_refiner.so \
+ vendor/sony/tubads/proprietary/lib/libmp4enc_xa.ca7.so:system/lib/libmp4enc_xa.ca7.so \
+ vendor/sony/tubads/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
+ vendor/sony/tubads/proprietary/lib/libMTKAudioTimeStretch.so:system/lib/libMTKAudioTimeStretch.so \
+ vendor/sony/tubads/proprietary/lib/libMtkH264SecVdecTLCLib.so:system/lib/libMtkH264SecVdecTLCLib.so \
+ vendor/sony/tubads/proprietary/lib/libMtkH264SecVencTLCLib.so:system/lib/libMtkH264SecVencTLCLib.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxWmaDec.so:system/lib/libMtkOmxWmaDec.so \
+ vendor/sony/tubads/proprietary/lib/libMtkOmxWmaProDec.so:system/lib/libMtkOmxWmaProDec.so \
+ vendor/sony/tubads/proprietary/lib/libmtkplayer.so:system/lib/libmtkplayer.so \
+ vendor/sony/tubads/proprietary/lib/libmtksqlite3_android.so:system/lib/libmtksqlite3_android.so \
+ vendor/sony/tubads/proprietary/lib/libmtksqlite3_custom.so:system/lib/libmtksqlite3_custom.so \
+ vendor/sony/tubads/proprietary/lib/libMtkVideoSpeedEffect.so:system/lib/libMtkVideoSpeedEffect.so \
+ vendor/sony/tubads/proprietary/lib/libmtk_vt_service.so:system/lib/libmtk_vt_service.so \
+ vendor/sony/tubads/proprietary/lib/libmtk_vt_swip.so:system/lib/libmtk_vt_swip.so \
+ vendor/sony/tubads/proprietary/lib/libmtk_vt_utils.so:system/lib/libmtk_vt_utils.so \
+ vendor/sony/tubads/proprietary/lib/libnfc-nci.so:system/lib/libnfc-nci.so \
+ vendor/sony/tubads/proprietary/lib/libnfc_nci_jni.so:system/lib/libnfc_nci_jni.so \
+ vendor/sony/tubads/proprietary/lib/libplstorage.so:system/lib/libplstorage.so \
+ vendor/sony/tubads/proprietary/lib/libprotobuf-c.so:system/lib/libprotobuf-c.so \
+ vendor/sony/tubads/proprietary/lib/libprotobuf-cpp-2.3.0-lite.so:system/lib/libprotobuf-cpp-2.3.0-lite.so \
+ vendor/sony/tubads/proprietary/lib/libscdclient.so:system/lib/libscdclient.so \
+ vendor/sony/tubads/proprietary/lib/libsec_mem.so:system/lib/libsec_mem.so \
+ vendor/sony/tubads/proprietary/lib/libsimaka.so:system/lib/libsimaka.so \
+ vendor/sony/tubads/proprietary/lib/libsink.so:system/lib/libsink.so \
+ vendor/sony/tubads/proprietary/lib/libsource.so:system/lib/libsource.so \
+ vendor/sony/tubads/proprietary/lib/libssl-ss.so:system/lib/libssl-ss.so \
+ vendor/sony/tubads/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
+ vendor/sony/tubads/proprietary/lib/libstartup-reason.so:system/lib/libstartup-reason.so \
+ vendor/sony/tubads/proprietary/lib/libstrongswan.so:system/lib/libstrongswan.so \
+ vendor/sony/tubads/proprietary/lib/libsuntory.so:system/lib/libsuntory.so \
+ vendor/sony/tubads/proprietary/lib/libsuntory_utils.so:system/lib/libsuntory_utils.so \
+ vendor/sony/tubads/proprietary/lib/libta.so:system/lib/libta.so \
+ vendor/sony/tubads/proprietary/lib/libtee.so:system/lib/libtee.so \
+ vendor/sony/tubads/proprietary/lib/libtlcWidevineClassicDrm.so:system/lib/libtlcWidevineClassicDrm.so \
+ vendor/sony/tubads/proprietary/lib/libtlcWidevineModularDrm.so:system/lib/libtlcWidevineModularDrm.so \
+ vendor/sony/tubads/proprietary/lib/libtpm.so:system/lib/libtpm.so \
+ vendor/sony/tubads/proprietary/lib/libui_ext.so:system/lib/libui_ext.so \
+ vendor/sony/tubads/proprietary/lib/liburee_meta_drmkeyinstall.so:system/lib/liburee_meta_drmkeyinstall.so \
+ vendor/sony/tubads/proprietary/lib/libvcodec_cap.so:system/lib/libvcodec_cap.so \
+ vendor/sony/tubads/proprietary/lib/libvie.so:system/lib/libvie.so \
+ vendor/sony/tubads/proprietary/lib/libvie_jni.so:system/lib/libvie_jni.so \
+ vendor/sony/tubads/proprietary/lib/libvobsub_jni.so:system/lib/libvobsub_jni.so \
+ vendor/sony/tubads/proprietary/lib/libvoicerecognition.so:system/lib/libvoicerecognition.so \
+ vendor/sony/tubads/proprietary/lib/libvoicerecognition_jni.so:system/lib/libvoicerecognition_jni.so \
+ vendor/sony/tubads/proprietary/lib/libvtmal.so:system/lib/libvtmal.so \
+ vendor/sony/tubads/proprietary/lib/libvt_avsync.so:system/lib/libvt_avsync.so \
+ vendor/sony/tubads/proprietary/lib/libvt_custom.so:system/lib/libvt_custom.so \
+ vendor/sony/tubads/proprietary/lib/libvt_socketbind.so:system/lib/libvt_socketbind.so \
+ vendor/sony/tubads/proprietary/lib/lib_asb_tee.so:system/lib/lib_asb_tee.so \
+ vendor/sony/tubads/proprietary/lib/sensors.mediatek.so:system/lib/sensors.mediatek.so \
+ vendor/sony/tubads/proprietary/lib/sensors.smd.so:system/lib/sensors.smd.so \
+ vendor/sony/tubads/proprietary/lib/volte_imsm.so:system/lib/volte_imsm.so \
+ vendor/sony/tubads/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+ vendor/sony/tubads/proprietary/lib/hw/audio_policy.stub.so:system/lib/hw/audio_policy.stub.so \
+ vendor/sony/tubads/proprietary/lib/hw/camera.default.so:system/lib/hw/camera.default.so \
+ vendor/sony/tubads/proprietary/lib/hw/keystore.mt6755.so:system/lib/hw/keystore.mt6755.so \
+ vendor/sony/tubads/proprietary/lib/hw/libMcGatekeeper.so:system/lib/hw/libMcGatekeeper.so \
+ vendor/sony/tubads/proprietary/lib/hw/nfc_nci.pn54x.mt6755.so:system/lib/hw/nfc_nci.pn54x.mt6755.so \
+ vendor/sony/tubads/proprietary/lib/modules/ecryptfs.ko:system/lib/modules/ecryptfs.ko \
+ vendor/sony/tubads/proprietary/lib/modules/texfat.ko:system/lib/modules/texfat.ko \
+ vendor/sony/tubads/proprietary/lib/soundfx/libsonysweffect.so:system/lib/soundfx/libsonysweffect.so \
+ vendor/sony/tubads/proprietary/lib64/libaal.so:system/lib64/libaal.so \
+ vendor/sony/tubads/proprietary/lib64/libaal_cust.so:system/lib64/libaal_cust.so \
+ vendor/sony/tubads/proprietary/lib64/libamphotofix.so:system/lib64/libamphotofix.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_antishaking.so:system/lib64/libarcsoft_antishaking.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_beautyshot.so:system/lib64/libarcsoft_beautyshot.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_condition_detection.so:system/lib64/libarcsoft_condition_detection.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_detection_base.so:system/lib64/libarcsoft_detection_base.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_dro.so:system/lib64/libarcsoft_dro.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_dynamic_light.so:system/lib64/libarcsoft_dynamic_light.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_face_detection.so:system/lib64/libarcsoft_face_detection.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_face_tracking.so:system/lib64/libarcsoft_face_tracking.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_hdr.so:system/lib64/libarcsoft_hdr.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_motiondetection.so:system/lib64/libarcsoft_motiondetection.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_nighthawk.so:system/lib64/libarcsoft_nighthawk.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_nightzoom.so:system/lib64/libarcsoft_nightzoom.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_night_shot.so:system/lib64/libarcsoft_night_shot.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_object_tracking.so:system/lib64/libarcsoft_object_tracking.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_picauto.so:system/lib64/libarcsoft_picauto.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_piczoom.so:system/lib64/libarcsoft_piczoom.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_rer.so:system/lib64/libarcsoft_rer.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_selfie_correction.so:system/lib64/libarcsoft_selfie_correction.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_smart_denoise.so:system/lib64/libarcsoft_smart_denoise.so \
+ vendor/sony/tubads/proprietary/lib64/libarcsoft_smile_detection.so:system/lib64/libarcsoft_smile_detection.so \
+ vendor/sony/tubads/proprietary/lib64/libbluetooth_hw_test.so:system/lib64/libbluetooth_hw_test.so \
+ vendor/sony/tubads/proprietary/lib64/libbt-aptX-ARM-4.2.2.so:system/lib64/libbt-aptX-ARM-4.2.2.so \
+ vendor/sony/tubads/proprietary/lib64/libcam.jni.lomohaljni.so:system/lib64/libcam.jni.lomohaljni.so \
+ vendor/sony/tubads/proprietary/lib64/libcharon.so:system/lib64/libcharon.so \
+ vendor/sony/tubads/proprietary/lib64/libcomutils.so:system/lib64/libcomutils.so \
+ vendor/sony/tubads/proprietary/lib64/libcrashmonitorclient.so:system/lib64/libcrashmonitorclient.so \
+ vendor/sony/tubads/proprietary/lib64/libcrashmonitorjni.so:system/lib64/libcrashmonitorjni.so \
+ vendor/sony/tubads/proprietary/lib64/libcredential-manager-service.so:system/lib64/libcredential-manager-service.so \
+ vendor/sony/tubads/proprietary/lib64/libcrypto-ss.so:system/lib64/libcrypto-ss.so \
+ vendor/sony/tubads/proprietary/lib64/libcurl-ss.so:system/lib64/libcurl-ss.so \
+ vendor/sony/tubads/proprietary/lib64/libdatawasherjni.so:system/lib64/libdatawasherjni.so \
+ vendor/sony/tubads/proprietary/lib64/libdevice_security.so:system/lib64/libdevice_security.so \
+ vendor/sony/tubads/proprietary/lib64/libdisplayservice.so:system/lib64/libdisplayservice.so \
+ vendor/sony/tubads/proprietary/lib64/libem_audio_jni.so:system/lib64/libem_audio_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libextended_boot_lock.so:system/lib64/libextended_boot_lock.so \
+ vendor/sony/tubads/proprietary/lib64/libfeatureio.cfb.so:system/lib64/libfeatureio.cfb.so \
+ vendor/sony/tubads/proprietary/lib64/libfeatureio.featurefactory.so:system/lib64/libfeatureio.featurefactory.so \
+ vendor/sony/tubads/proprietary/lib64/libfeatureio.jpg.so:system/lib64/libfeatureio.jpg.so \
+ vendor/sony/tubads/proprietary/lib64/libfilterpack_facedetect.so:system/lib64/libfilterpack_facedetect.so \
+ vendor/sony/tubads/proprietary/lib64/libfrpflag.so:system/lib64/libfrpflag.so \
+ vendor/sony/tubads/proprietary/lib64/libgaanalytics.so:system/lib64/libgaanalytics.so \
+ vendor/sony/tubads/proprietary/lib64/libgui_ext.so:system/lib64/libgui_ext.so \
+ vendor/sony/tubads/proprietary/lib64/libhotknot_vendor.so:system/lib64/libhotknot_vendor.so \
+ vendor/sony/tubads/proprietary/lib64/libhydra.so:system/lib64/libhydra.so \
+ vendor/sony/tubads/proprietary/lib64/libidd.so:system/lib64/libidd.so \
+ vendor/sony/tubads/proprietary/lib64/libiddjni.so:system/lib64/libiddjni.so \
+ vendor/sony/tubads/proprietary/lib64/libimsma.so:system/lib64/libimsma.so \
+ vendor/sony/tubads/proprietary/lib64/libimsma_rtp.so:system/lib64/libimsma_rtp.so \
+ vendor/sony/tubads/proprietary/lib64/libimsma_socketwrapper.so:system/lib64/libimsma_socketwrapper.so \
+ vendor/sony/tubads/proprietary/lib64/libjhead.so:system/lib64/libjhead.so \
+ vendor/sony/tubads/proprietary/lib64/libjni_lomoeffect.so:system/lib64/libjni_lomoeffect.so \
+ vendor/sony/tubads/proprietary/lib64/libjtranscode.so:system/lib64/libjtranscode.so \
+ vendor/sony/tubads/proprietary/lib64/libklog.so:system/lib64/libklog.so \
+ vendor/sony/tubads/proprietary/lib64/liblights-core.so:system/lib64/liblights-core.so \
+ vendor/sony/tubads/proprietary/lib64/libmal_datamngr.so:system/lib64/libmal_datamngr.so \
+ vendor/sony/tubads/proprietary/lib64/libmal_epdga.so:system/lib64/libmal_epdga.so \
+ vendor/sony/tubads/proprietary/lib64/libmal_imsmngr.so:system/lib64/libmal_imsmngr.so \
+ vendor/sony/tubads/proprietary/lib64/libmal_mdmngr.so:system/lib64/libmal_mdmngr.so \
+ vendor/sony/tubads/proprietary/lib64/libmal_nwmngr.so:system/lib64/libmal_nwmngr.so \
+ vendor/sony/tubads/proprietary/lib64/libmal_rds.so:system/lib64/libmal_rds.so \
+ vendor/sony/tubads/proprietary/lib64/libmal_rilproxy.so:system/lib64/libmal_rilproxy.so \
+ vendor/sony/tubads/proprietary/lib64/libmal_simmngr.so:system/lib64/libmal_simmngr.so \
+ vendor/sony/tubads/proprietary/lib64/libMcClient.so:system/lib64/libMcClient.so \
+ vendor/sony/tubads/proprietary/lib64/libMcRegistry.so:system/lib64/libMcRegistry.so \
+ vendor/sony/tubads/proprietary/lib64/libMiraVision_jni.so:system/lib64/libMiraVision_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libmiscta.so:system/lib64/libmiscta.so \
+ vendor/sony/tubads/proprietary/lib64/libMiscTaAccessor.so:system/lib64/libMiscTaAccessor.so \
+ vendor/sony/tubads/proprietary/lib64/libMiscTAApi.so:system/lib64/libMiscTAApi.so \
+ vendor/sony/tubads/proprietary/lib64/libmisctalogger.so:system/lib64/libmisctalogger.so \
+ vendor/sony/tubads/proprietary/lib64/libmmsdkservice.feature.so:system/lib64/libmmsdkservice.feature.so \
+ vendor/sony/tubads/proprietary/lib64/libmorpho_video_refiner.so:system/lib64/libmorpho_video_refiner.so \
+ vendor/sony/tubads/proprietary/lib64/libmpbase.so:system/lib64/libmpbase.so \
+ vendor/sony/tubads/proprietary/lib64/libMTKAudioTimeStretch.so:system/lib64/libMTKAudioTimeStretch.so \
+ vendor/sony/tubads/proprietary/lib64/libMtkH264SecVdecTLCLib.so:system/lib64/libMtkH264SecVdecTLCLib.so \
+ vendor/sony/tubads/proprietary/lib64/libMtkH264SecVencTLCLib.so:system/lib64/libMtkH264SecVencTLCLib.so \
+ vendor/sony/tubads/proprietary/lib64/libmtksqlite3_android.so:system/lib64/libmtksqlite3_android.so \
+ vendor/sony/tubads/proprietary/lib64/libmtksqlite3_custom.so:system/lib64/libmtksqlite3_custom.so \
+ vendor/sony/tubads/proprietary/lib64/libMtkVideoSpeedEffect.so:system/lib64/libMtkVideoSpeedEffect.so \
+ vendor/sony/tubads/proprietary/lib64/libmtk_vt_service.so:system/lib64/libmtk_vt_service.so \
+ vendor/sony/tubads/proprietary/lib64/libmtk_vt_swip.so:system/lib64/libmtk_vt_swip.so \
+ vendor/sony/tubads/proprietary/lib64/libmtk_vt_utils.so:system/lib64/libmtk_vt_utils.so \
+ vendor/sony/tubads/proprietary/lib64/libpcre_utf.so:system/lib64/libpcre_utf.so \
+ vendor/sony/tubads/proprietary/lib64/libplstorage.so:system/lib64/libplstorage.so \
+ vendor/sony/tubads/proprietary/lib64/libprotobuf-c.so:system/lib64/libprotobuf-c.so \
+ vendor/sony/tubads/proprietary/lib64/libprotobuf-cpp-2.3.0-lite.so:system/lib64/libprotobuf-cpp-2.3.0-lite.so \
+ vendor/sony/tubads/proprietary/lib64/libscdclient.so:system/lib64/libscdclient.so \
+ vendor/sony/tubads/proprietary/lib64/libsec_mem.so:system/lib64/libsec_mem.so \
+ vendor/sony/tubads/proprietary/lib64/libsimaka.so:system/lib64/libsimaka.so \
+ vendor/sony/tubads/proprietary/lib64/libsink.so:system/lib64/libsink.so \
+ vendor/sony/tubads/proprietary/lib64/libsource.so:system/lib64/libsource.so \
+ vendor/sony/tubads/proprietary/lib64/libssl-ss.so:system/lib64/libssl-ss.so \
+ vendor/sony/tubads/proprietary/lib64/libstaminajni.so:system/lib64/libstaminajni.so \
+ vendor/sony/tubads/proprietary/lib64/libstartup-reason.so:system/lib64/libstartup-reason.so \
+ vendor/sony/tubads/proprietary/lib64/libstrongswan.so:system/lib64/libstrongswan.so \
+ vendor/sony/tubads/proprietary/lib64/libsuntory.so:system/lib64/libsuntory.so \
+ vendor/sony/tubads/proprietary/lib64/libsuntory_utils.so:system/lib64/libsuntory_utils.so \
+ vendor/sony/tubads/proprietary/lib64/libta.so:system/lib64/libta.so \
+ vendor/sony/tubads/proprietary/lib64/libtee.so:system/lib64/libtee.so \
+ vendor/sony/tubads/proprietary/lib64/libtimestretch.so:system/lib64/libtimestretch.so \
+ vendor/sony/tubads/proprietary/lib64/libtlcWidevineClassicDrm.so:system/lib64/libtlcWidevineClassicDrm.so \
+ vendor/sony/tubads/proprietary/lib64/libtlcWidevineModularDrm.so:system/lib64/libtlcWidevineModularDrm.so \
+ vendor/sony/tubads/proprietary/lib64/libtpm.so:system/lib64/libtpm.so \
+ vendor/sony/tubads/proprietary/lib64/libui_ext.so:system/lib64/libui_ext.so \
+ vendor/sony/tubads/proprietary/lib64/liburee_meta_drmkeyinstall.so:system/lib64/liburee_meta_drmkeyinstall.so \
+ vendor/sony/tubads/proprietary/lib64/libvcodec_cap.so:system/lib64/libvcodec_cap.so \
+ vendor/sony/tubads/proprietary/lib64/libvobsub_jni.so:system/lib64/libvobsub_jni.so \
+ vendor/sony/tubads/proprietary/lib64/libvtmal.so:system/lib64/libvtmal.so \
+ vendor/sony/tubads/proprietary/lib64/libvt_avsync.so:system/lib64/libvt_avsync.so \
+ vendor/sony/tubads/proprietary/lib64/libvt_socketbind.so:system/lib64/libvt_socketbind.so \
+ vendor/sony/tubads/proprietary/lib64/lib_asb_tee.so:system/lib64/lib_asb_tee.so \
+ vendor/sony/tubads/proprietary/lib64/sensors.mediatek.so:system/lib64/sensors.mediatek.so \
+ vendor/sony/tubads/proprietary/lib64/sensors.smd.so:system/lib64/sensors.smd.so \
+ vendor/sony/tubads/proprietary/lib64/volte_imsm.so:system/lib64/volte_imsm.so \
+ vendor/sony/tubads/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
+ vendor/sony/tubads/proprietary/lib64/hw/audio_policy.stub.so:system/lib64/hw/audio_policy.stub.so \
+ vendor/sony/tubads/proprietary/lib64/hw/camera.default.so:system/lib64/hw/camera.default.so \
+ vendor/sony/tubads/proprietary/lib64/hw/keystore.mt6755.so:system/lib64/hw/keystore.mt6755.so \
+ vendor/sony/tubads/proprietary/lib64/hw/libMcGatekeeper.so:system/lib64/hw/libMcGatekeeper.so \
+ vendor/sony/tubads/proprietary/lib64/hw/nfc_nci.pn54x.mt6755.so:system/lib64/hw/nfc_nci.pn54x.mt6755.so \
+ vendor/sony/tubads/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
+ vendor/sony/tubads/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
  vendor/sony/tubads/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
  vendor/sony/tubads/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
  vendor/sony/tubads/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+ vendor/sony/tubads/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
  vendor/sony/tubads/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
  vendor/sony/tubads/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
- vendor/sony/tubads/proprietary/xbin/BGW:system/xbin/BGW \
- vendor/sony/tubads/proprietary/xbin/mnld:system/xbin/mnld \
- vendor/sony/tubads/proprietary/xbin/MPED:system/xbin/MPED \
- vendor/sony/tubads/proprietary/bin/vold:system/bin/vold \
- vendor/sony/tubads/proprietary/bin/hostapd:system/bin/hostapd \
- vendor/sony/tubads/proprietary/bin/hostapd_cli:system/bin/hostapd_cli \
- vendor/sony/tubads/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
- vendor/sony/tubads/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so \
- vendor/sony/tubads/proprietary/lib/libc.so:system/lib/libc.so \
- vendor/sony/tubads/proprietary/lib/libcutils.so:system/lib/libcutils.so \
- vendor/sony/tubads/proprietary/lib64/libc.so:system/lib64/libc.so \
- vendor/sony/tubads/proprietary/lib64/libcutils.so:system/lib64/libcutils.so \
- vendor/sony/tubads/proprietary/lib64/libwpa_client.so:system/lib64/libwpa_client.so \
- vendor/sony/tubads/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
- vendor/sony/tubads/proprietary/etc/mddb/DbgInfo_LR11.W1535.MD.MP_CCI6755_64_S10_M_MOLY_LR11_W1535_MD_MP_V41_T1_2016_09_20_00_40_1_ulwctg_n:system/etc/mddb/DbgInfo_LR11.W1535.MD.MP_CCI6755_64_S10_M_MOLY_LR11_W1535_MD_MP_V41_T1_2016_09_20_00_40_1_ulwctg_n \
- vendor/sony/tubads/proprietary/etc/mddb/MDDB.META_MT6755_S00_MOLY_LR11_W1535_MD_MP_V41_T1_1_ulwctg_n.EDB:system/etc/mddb/MDDB.META_MT6755_S00_MOLY_LR11_W1535_MD_MP_V41_T1_1_ulwctg_n.EDB \
- vendor/sony/tubads/proprietary/etc/mddb/MDDB_InfoCustomAppSrcP_MT6755_S00_MOLY_LR11_W1535_MD_MP_V41_T1_1_ulwctg_n.EDB:system/etc/mddb/MDDB_InfoCustomAppSrcP_MT6755_S00_MOLY_LR11_W1535_MD_MP_V41_T1_1_ulwctg_n.EDB \
- vendor/sony/tubads/proprietary/etc/mddb/mdm_layout_desc_1_ulwctg_n.dat:system/etc/mddb/mdm_layout_desc_1_ulwctg_n.dat \
- vendor/sony/tubads/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
- vendor/sony/tubads/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
+ vendor/sony/tubads/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
  vendor/sony/tubads/proprietary/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
  vendor/sony/tubads/proprietary/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd \
- vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8 \
- vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1 \
- vendor/sony/tubads/proprietary/vendor/pittpatt/models/recognition/face.face.y0-y0-71-N-tree_7-wmd.bin:system/vendor/pittpatt/models/recognition/face.face.y0-y0-71-N-tree_7-wmd.bin
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8/landmark_group_meta_data.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8/landmark_group_meta_data.bin \
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-tree7-wmd.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-tree7-wmd.bin \
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32-tree7-wmd.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32-tree7-wmd.bin \
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-3-tree7-wmd.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.8/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-3-tree7-wmd.bin \
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/head-y0-yi45-p0-pi45-r0-ri30.4a-v24-tree7-2-wmd.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/head-y0-yi45-p0-pi45-r0-ri30.4a-v24-tree7-2-wmd.bin \
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/head-y0-yi45-p0-pi45-rn30-ri30.5-v24-tree7-2-wmd.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/head-y0-yi45-p0-pi45-rn30-ri30.5-v24-tree7-2-wmd.bin \
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/head-y0-yi45-p0-pi45-rp30-ri30.5-v24-tree7-2-wmd.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/head-y0-yi45-p0-pi45-rp30-ri30.5-v24-tree7-2-wmd.bin \
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/pose-r.8.1.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/pose-r.8.1.bin \
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/pose-y-r.8.1.bin:system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.7.1/pose-y-r.8.1.bin \
+ vendor/sony/tubads/proprietary/vendor/pittpatt/models/recognition/face.face.y0-y0-71-N-tree_7-wmd.bin:system/vendor/pittpatt/models/recognition/face.face.y0-y0-71-N-tree_7-wmd.bin \
+ vendor/sony/tubads/proprietary/bin/vold:system/bin/vold \
+ vendor/sony/tubads/proprietary/bin/pq:system/bin/pq
